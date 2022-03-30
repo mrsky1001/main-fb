@@ -86,30 +86,30 @@ section{
 }
 
 .logo-text > *:nth-child(1) {
-    animation: show 12s;
+    animation: show 8s;
 }
 
 .logo-text > *:nth-child(2) {
-    animation: show 14s;
+    animation: show 10s;
 }
 
 .logo-text > *:nth-child(3) {
-    animation: show 13s;
+    animation: show 6s;
 }
 .logo-text > *:nth-child(4) {
-    animation: show 12s;
+    animation: show 8s;
 }
 .logo-text > *:nth-child(5) {
-    animation: show 10s;
+    animation: show 4s;
 }
 .logo-text > *:nth-child(6) {
-    animation: show 12s;
+    animation: show 6s;
 }
 .logo-text > *:nth-child(7) {
-    animation: show 14s;
+    animation: show 6s;
 }
 .logo-text > *:nth-child(8) {
-    animation: show 10s;
+    animation: show 4s;
 }
 section {
     display: flex;
@@ -150,11 +150,19 @@ section {
 
 /* Parallax base styles
 --------------------------------------------- */
+.white{
+    background-color: black;
+    color: white;
+}
 
+.black{
+    background-color: white;
+    color: black;
+}
 .parallax {
     height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    overflow-x: hidden;
+    height: 200vh;
+    overflow-x: hidden ;
     overflow-y: auto;
     -webkit-perspective: 300px;
     perspective: 300px;
@@ -225,4 +233,10 @@ section {
 .parallax__group {
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
+}
+
+::-webkit-scrollbar { width: 0px; display: none; }
+
+body > *{
+    /*overflow: hidden !important;*/
 }
