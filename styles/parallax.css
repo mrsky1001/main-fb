@@ -11,14 +11,15 @@
 
 .parallax__top-header{
     position: absolute;
+    right: 0;
     text-align: center;
 }
 
 .parallax__top-header .header-text{
     writing-mode: tb;
     height: 100%;
-    transform: rotate(
-            180deg);
+    /*transform: rotate(*/
+    /*        180deg);*/
 }
 
 .parallax {
@@ -70,6 +71,13 @@
     z-index: 2;
 }
 
+.parallax__content{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
 
 /* Debugger styles - used to show the effect
 --------------------------------------------- */
