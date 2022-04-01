@@ -3,61 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>F.O.M.A.</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/wrappers.css"/>
+    <link rel="stylesheet" href="styles/nav.css"/>
+    <link rel="stylesheet" href="styles/parallax.css"/>
+    <link rel="stylesheet" href="styles/parallax__logo.css"/>
     <link rel="stylesheet" href="fonts/ClearSans.ttf"/>
     <link rel="icon" href="fb15.png">
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <div class="left-navbar">
-            <a href="https://foma-blog.ru"><img src="fb15.png" alt="logo"></a>
-        </div>
-        <div class="right-navbar">
-            <a href="https://store.foma-blog.ru">Лавка</a>
-            <!--            <a href="https://foma-blog.ru">Блог</a>-->
-            <a href="https://dev.foma-blog.ru">Разработка</a>
-            <a href="https://design.foma-blog.ru">Дизайн</a>
-            <!--            <a href="https://home.foma-blog.ru">Дом</a>-->
-            <a href="https://photo.foma-blog.ru">Фото</a>
-            <a href="https://photo.foma-blog.ru">Контакты</a>
+    <header class="wrapper__header">
+        <div class="nav">
+            <div class="nav__left">
+                <a class="nav__logo" href="https://foma-blog.ru"><img src="fb15.png" alt="logo"></a>
+            </div>
+            <div class="nav__right">
+                <a class="nav__link" href="https://store.foma-blog.ru">Лавка</a>
+                <!--            <a href="https://foma-blog.ru">Блог</a>-->
+                <a class="nav__link" href="https://dev.foma-blog.ru">Разработка</a>
+                <a class="nav__link" href="https://design.foma-blog.ru">Дизайн</a>
+                <!--            <a href="https://home.foma-blog.ru">Дом</a>-->
+                <a class="nav__link" href="https://photo.foma-blog.ru">Фото</a>
+                <a class="nav__link" href="https://photo.foma-blog.ru">Контакты</a>
+            </div>
         </div>
     </header>
 </div>
-<!--    <section class="debug-on">-->
-<!--        <div class="logo-text">-->
-<!--            <span>F</span>-->
-<!--            <span>.</span>-->
-<!--            <span>O</span>-->
-<!--            <span>.</span>-->
-<!--            <span>M</span>-->
-<!--            <span>.</span>-->
-<!--            <span>A</span>-->
-<!--            <span>.</span>-->
-<!--        </div>-->
-<!--    </section>-->
-<div class="parallax ">
+<div class="parallax">
     <div id="group1" class="parallax__group">
         <div class="parallax__layer parallax__layer--base">
-            <section>
-                <div class="logo-text">
-                    <span>F</span>
-                    <span>.</span>
-                    <span>O</span>
-                    <span>.</span>
-                    <span>M</span>
-                    <span>.</span>
-                    <span>A</span>
-                    <span>.</span>
+            <div class="parallax__logo">
+                <div class="logo">
+                    <span class="logo-symbol">F</span>
+                     <span class="logo-symbol">.</span>
+                     <span class="logo-symbol">O</span>
+                     <span class="logo-symbol">.</span>
+                     <span class="logo-symbol">M</span>
+                     <span class="logo-symbol">.</span>
+                     <span class="logo-symbol">A</span>
+                     <span class="logo-symbol">.</span>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
-    <div id="group2" class="parallax__group ">
-
-        <div class="parallax__layer parallax__layer--base" style="background-color: black;   ">
-            <section class="white" style="margin: 20px 0 10% 0">
-                <div>
+    <div id="group2" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base parallax__layer--black">
+            <div class="parallax__top-header">
+                <div class="header-text">
                     <span>F</span>
                     <span>.</span>
                     <span>O</span>
@@ -67,18 +60,26 @@
                     <span>A</span>
                     <span>.</span>
                 </div>
-            </section>
+            </div>
             <div style="  display: flex;align-items: center;     justify-content: space-around;">
                 <div class="white" style="max-width: 350px;     ">
                     <h1>О нас</h1>
                     <div style="letter-spacing: 2px">
-                        Мы, Никита и Настя, приветсвуем тебя в нашем уголке творчества. <br/><br/>
-                        Здесь мы делимся опытом в области программирования, дизайна и фотографирии, а так же фотокарточками из разных путешествий по «нашей необъятной».
+                        Приветсвуем тебя в нашем уголке творчества. <br/><br/>
+                        Здесь мы делимся опытом в области программирования, дизайна и фотографирии, а так же
+                        фотокарточками из разных путешествий по «нашей необъятной».
                     </div>
                 </div>
                 <div class="white"
                      style="max-width: 50%;         display: flex; flex-direction: column; align-items: center;     justify-content: space-around;">
-                    <img src="assets/фото2.2.png" alt="logo" style="width: 80%; float: right; border-radius: 15px; ">
+                    <div>
+                        <div style="position: absolute; background-color: white; width: 200px; height: 100px;">
+                        </div>
+                        <img src="assets/фото2.2.png" alt="logo"
+                             style="width: 80%; float: right; border-radius: 15px; ">
+
+
+                    </div>
                     <!--                    <div style="">Никита и Настя</div>-->
                 </div>
                 <!--            <section>-->
@@ -106,7 +107,10 @@
     </div>
     <div id="group3" class="parallax__group">
         <div class="parallax__layer parallax__layer--fore">
-            group3
+            <div id="wrapper2">
+                <div id="inner"></div>
+                <div id="text"><img src="assets/berries.png" alt="logo"></div>
+            </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
             <div class="title"></div>
@@ -131,18 +135,18 @@
             <div class="title">Background Layer</div>
         </div>
         <div class="parallax__layer parallax__layer--deep">
-            <section>
-                <div>
-                    <span>F</span>
-                    <span>.</span>
-                    <span>O</span>
-                    <span>.</span>
-                    <span>M</span>
-                    <span>.</span>
-                    <span>A</span>
-                    <span>.</span>
-                </div>
-            </section>
+            <!--            <section>-->
+            <!--                <div>-->
+            <!--                    <span>F</span>-->
+            <!--                    <span>.</span>-->
+            <!--                    <span>O</span>-->
+            <!--                    <span>.</span>-->
+            <!--                    <span>M</span>-->
+            <!--                    <span>.</span>-->
+            <!--                    <span>A</span>-->
+            <!--                    <span>.</span>-->
+            <!--                </div>-->
+            <!--            </section>-->
         </div>
     </div>
     <div id="group5" class="parallax__group">
@@ -180,5 +184,9 @@
         ...
     </div>
 </div>
+<script lang="js">
+    window.scroll(0, 1000)
+</script>
 </body>
+
 </html>

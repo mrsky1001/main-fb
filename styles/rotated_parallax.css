@@ -1,68 +1,9 @@
-@font-face {
-    font-family: intro; /* Гарнитура шрифта */
-    src: url(fonts/ClearSans.ttf); /* Путь к файлу со шрифтом */
-}
-
-* {
-    font-family: intro;
-}
-
-.wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-header {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-navbar img {
-    max-width: 50px;
-}
-
-.right-navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    align-items: center;
-    font-family: monospace;
-    font-size: 20px;
-}
-
-.right-navbar > a {
-    /*margin: 5px;*/
-    text-decoration: none;
-    color: gray;
-}
-
-.right-navbar > a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-section{
-
-}
-
-.debug {
-    position: fixed;
-    top: 0;
-    left: .5em;
-    z-index: 999;
-    background: rgba(0,0,0,.85);
-    color: #fff;
-    padding: .5em;
-    border-radius: 0 0 5px 5px;
-}
-
-.debug-on .parallax__group {
+.parallax__group {
     -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
     transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
 
-.debug-on .parallax__layer {
+.parallax__layer {
     box-shadow: 0 0 0 2px #000;
     opacity: 0.9;
 }
