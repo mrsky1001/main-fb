@@ -11,7 +11,7 @@
 
 .parallax__top-header{
     position: absolute;
-    right: 0;
+    right: 16px;
     text-align: center;
 }
 
@@ -73,7 +73,7 @@
 
 .parallax__content{
     display: flex;
-    width: 60%;
+    /*width: 60%;*/
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
