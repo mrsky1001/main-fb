@@ -57,6 +57,10 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 4;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .parallax__layer--back {

@@ -2,7 +2,9 @@
 .nav {
     margin: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .nav__left .nav__logo img {
@@ -16,11 +18,13 @@
 
 .nav__right {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 50%;
     align-items: center;
     font-family: monospace;
     font-size: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .nav__right .nav__link {
