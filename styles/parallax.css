@@ -3,19 +3,19 @@
     /*opacity: 0.9;*/
 }
 
-.parallax__layer--black{
+.parallax__layer--black {
     background-color: black;
     color: white;
     display: flex;
 }
 
-.parallax__top-header{
+.parallax__top-header {
     position: absolute;
     right: 16px;
     text-align: center;
 }
 
-.parallax__top-header .header-text{
+.parallax__top-header .header-text {
     writing-mode: tb;
     height: 100%;
     /*transform: rotate(*/
@@ -25,7 +25,7 @@
 .parallax {
     height: 500px; /* fallback for older browsers */
     height: 200vh;
-    overflow-x: hidden ;
+    overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 300px;
     perspective: 300px;
@@ -75,7 +75,7 @@
     z-index: 2;
 }
 
-.parallax__content{
+.parallax__content {
     display: flex;
     /*width: 60%;*/
     flex-direction: column;
@@ -91,29 +91,72 @@
     top: 0;
     left: .5em;
     z-index: 999;
-    background: rgba(0,0,0,.85);
+    background: rgba(0, 0, 0, .85);
     color: #fff;
     padding: .5em;
     border-radius: 0 0 5px 5px;
 }
+
 .debug-on .parallax__group {
     -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
     transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
+
 .debug-on .parallax__layer {
     box-shadow: 0 0 0 2px #000;
     opacity: 0.9;
 }
+
 .parallax__group {
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
 }
 
-::-webkit-scrollbar { width: 0px; display: none; }
+::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+}
 
 body {
     margin: 0;
     /*overflow: hidden !important;*/
 }
 
+.parallax__about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.about__right {
+    max-width: 50%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about__img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.about__back-img{
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    opacity: .3;
+    width: 40%;
+    /* opacity: .1; */
+    /* max-width: 400px; */
+    /* bottom: 0; */
+    z-index: -1;
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
 
