@@ -53,14 +53,13 @@
             </div>
         </div>
     </section>
-    <section id="about" class="parallax__group reveal">
+    <section id="about" class="parallax__group">
         <div class="parallax__layer parallax__layer--base parallax__layer--black">
             <div class="parallax__about">
                 <div>
                     <h1>О нас</h1>
                     <div style="letter-spacing: 2px; max-width: 350px;     ">
-                        Мы, Никита и Настя, авторы бренда «F.O.M.A.» - бренда о традициях, народных промыслах и культуре
-                        в переплетении с современнстью.
+                        Мы, Никита и Настя, авторы бренда «F.O.M.A.» - бренда о любви к традициям в переплетении с современными технологиями.
                         <br/><br/>
                         Рады приветсвовать тебя в нашем уголке творчества!
                         <br/><br/>
@@ -185,24 +184,6 @@
     //     window.scrollTo(0, 1000)
     // }
 
-    function reveal() {
-        console.log('ss')
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("active");
-            } else {
-                reveals[i].classList.remove("active");
-            }
-        }
-    }
-
-    window.addEventListener("scroll", reveal);
 
 </script>
 </body>

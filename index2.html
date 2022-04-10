@@ -32,37 +32,54 @@
     </header>
 </div>
 
-<section>
-    <h1>Scroll Down to Reveal Elements &#8595;</h1>
-</section>
-<section>
-    <div class="container reveal fade-bottom">
-        <h2>Caption</h2>
-        <div class="text-container">
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
-            </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
-            </div>
-            <div class="text-box">
-                <h3>Section Text</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                    eius molestiae perferendis eos provident vitae iste.
-                </p>
+<div class="parallax">
+    <section id="start" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="parallax__logo">
+                <div class="logo">
+                    <span class="logo-symbol">F</span>
+                    <span class="logo-symbol">.</span>
+                    <span class="logo-symbol">O</span>
+                    <span class="logo-symbol">.</span>
+                    <span class="logo-symbol">M</span>
+                    <span class="logo-symbol">.</span>
+                    <span class="logo-symbol">A</span>
+                    <span class="logo-symbol">.</span>
+                </div>
             </div>
         </div>
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">
+                <figure><img class="fadeInRight logo-img" src="assets/berries.png" alt="logo"></figure>
+            </div>
+        </div>
+    </section>
+<!--    <section id="about" class="parallax__group reveal">-->
+    <div class="parallax__reveal container fade-bottom">
+            <div class="parallax__layer parallax__layer--base parallax__layer--black">
+                <div class="parallax__about">
+                    <div>
+                        <h1>О нас</h1>
+                        <div style="letter-spacing: 2px; max-width: 350px;     ">
+                            Мы, Никита и Настя, авторы бренда «F.O.M.A.» - бренда о традициях, народных промыслах и культуре
+                            в переплетении с современнстью.
+                            <br/><br/>
+                            Рады приветсвовать тебя в нашем уголке творчества!
+                            <br/><br/>
+                            Сайт посвещен заметкам в области программирования, дизайна и фотографии, а так же историям из
+                            путешествий по просторам нашей необъятной.
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <img class="about__img" src="assets/фото2.2.png" alt="about">
+                    </div>
+                </div>
+                <img class="about__back-img" src="assets/time.png" alt="logo">
+            </div>
     </div>
-</section>
+<!--    </section>-->
+</div>
+
 
 <section>
     <div class="container reveal fade-left">
@@ -129,8 +146,7 @@
     // }
 
     function reveal() {
-        console.log('ss')
-        var reveals = document.querySelectorAll(".reveal");
+        var reveals = document.querySelectorAll(".parallax__reveal");
 
         for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;

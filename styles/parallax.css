@@ -112,10 +112,10 @@
     transition: transform 0.5s;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    display: none;
-}
+/*::-webkit-scrollbar {*/
+/*    width: 0px;*/
+/*    display: none;*/
+/*}*/
 
 body {
     margin: 0;
@@ -147,12 +147,16 @@ body {
 .about__back-img{
     position: absolute;
     left: 0;
-    bottom: -200px;
+    /*bottom: -200px;*/
     opacity: .3;
     width: 40%;
+    /*max-height: 30%;*/
     /* opacity: .1; */
     /* max-width: 400px; */
-    /* bottom: 0; */
+     bottom: 0;
+    object-fit: cover;
+    height: 53%;
+    object-position: 0 0;
     z-index: -1;
     -moz-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);

@@ -5,4 +5,8 @@
 .wrapper {
     /*max-width: 1400px;*/
     margin: 0 auto;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
 }
