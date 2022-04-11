@@ -26,7 +26,7 @@
     height: 500px; /* fallback for older browsers */
     height: 200vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     -webkit-perspective: 300px;
     perspective: 300px;
 }
@@ -40,7 +40,7 @@
 }
 
 .parallax__layer {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     right: 0;
