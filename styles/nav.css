@@ -7,18 +7,19 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    max-width: 460px;
+    max-width: 515px;
     top: 57px;
 
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
 }
 
 .nav .nav__link{
     text-decoration: unset;
     color: #3D3D3D;
+    margin: 0 2em 0 0;
 }
 
 .nav .nav__link:hover{
