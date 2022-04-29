@@ -67,21 +67,23 @@
     /*position: relative;*/
     /*height: 70px;*/
     /*width: 600px;*/
-    background: #47b784;
-    clip-path: inset(60% 0%,10% 100%, 44% 68%, 100% 0);
+    /*background: #47b784;*/
+    /*clip-path: inset(60% 0%,10% 100%, 44% 68%, 100% 0);*/
 }
 
-/*.f-description-block:before {*/
-/*    content: "";*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    border-radius: 100% 50%;*/
-/*    width: 40%;*/
-/*    height: 100%;*/
-/*    background-color: white;*/
-/*    right: 0;*/
-/*    top: 39px;*/
-/*}*/
+.f-description-block:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 40%;
+    height: 100%;
+    background-color: darkolivegreen;
+    right: 0;
+    top: 39px;
+    /*clip-path: inset(60% 10%,100% 10%, 34% 68%, 100% 0);*/
+
+}
 
 /*.f-description-block :after {*/
 /*    content: "";*/
