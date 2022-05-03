@@ -3,12 +3,10 @@
  */
 
 .nav{
-    position: relative;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     max-width: 515px;
-    top: 57px;
 
     font-style: normal;
     font-weight: 400;

@@ -3,20 +3,15 @@
  */
 
 .about{
-    /*position: absolute;*/
-    position: relative;
-    width: 1922px;
-    height: 1456px;
-    left: 0px;
-    top: 455px;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
     color: white;
 }
 .about__wrapper{
-    top: 400px;
     position: relative;
+}
+.about__bg{
+    position: absolute;
+    z-index: -1;
+    top: 40em;
 }
 
 .about__header{
@@ -24,6 +19,7 @@
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.1em;
+    padding: 50px 0;
 }
 
 .about__text{
@@ -32,6 +28,13 @@
     top: 1232px;
 
     font-size: 16px;
+    letter-spacing: 0.2em;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
     letter-spacing: 0.2em;
 
     color: #FFFFFF;
