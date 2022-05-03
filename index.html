@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>F.O.M.A.</title>
-    <link rel="stylesheet" href="styles/wrapper.css"/>
     <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/wrapper.css"/>
     <link rel="stylesheet" href="styles/fonts.css"/>
-    <link rel="stylesheet" href="styles/nav.css"/>
-    <link rel="stylesheet" href="styles/logo-text.css"/>
+    <link rel="stylesheet" href="styles/start.css"/>
     <link rel="stylesheet" href="styles/about.css"/>
-    <link rel="stylesheet" href="styles/fomka.css"/>
     <!--    <link rel="icon" href="fb15.png">-->
 </head>
 <body>
@@ -52,6 +50,22 @@
             <img alt="background_about" src="assets/background_about.svg"/>
         </div>
     </section>
+    <canvas id='example'>Обновите браузер</canvas>
+    <script>
+        var example = document.getElementById("example"),
+            ctx     = example.getContext('2d');
+        example.height = 480;
+        example.width  = 640;
+        ctx.fillStyle = "orange";
+        ctx.beginPath();
+        ctx.moveTo(10, 15);
+        ctx.bezierCurveTo(75, 55, 175, 20, 250, 15);
+        ctx.moveTo(10, 15);
+        ctx.bezierCurveTo(75, 155, 175, 20, 250, 15);
+        // ctx.moveTo(10, 15);
+        // ctx.quadraticCurveTo(100, 100, 250, 15);
+        ctx.stroke();
+    </script>
 </div>
 </body>
 
