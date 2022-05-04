@@ -2,6 +2,12 @@
  * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  29.04.2022, 14:54
  */
 
+@font-face {
+    font-family: Viga;
+    src: url(../fonts/Viga-Regular.ttf);
+}
+
+
 * {
     font-family: Ubuntu, sans-serif;
 }
