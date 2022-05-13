@@ -52,11 +52,13 @@ body {
     grid-column: 3/12;
 }
 
+
+
 .about-bg{
     width: 100%;
     height: 1456px;
-    left: 0px;
-    top: 597px;
+    left: 0;
+    top: 60vh;
     position: absolute;
     background-image: url(../images/about_bg.svg);
     background-size: cover;
@@ -64,12 +66,13 @@ body {
     background-position: center;
 }
 
+
 .fomka-img{
-    top: -25px;
-    right: -500px;
-    width: 978px;
-    height: 1329px;
-    transform: scale(1.5);
+    top: 0;
+    left: 69vw;
+    width: 58vw;
+    height: 130vh;
+    /*transform: scale(1.5);*/
 
     position: absolute;
     background-image: url(../images/fomka.svg);
