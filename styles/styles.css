@@ -12,12 +12,12 @@ body {
     height: 100vh;
 }
 
-.content-header {
+.start-page__header {
     margin-top: 60px;
     grid-column: 3/12;
 }
 
-.content-header__list {
+.header__list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -25,27 +25,27 @@ body {
     margin: 0 auto;
 }
 
-.content-header__item {
+.header__item {
     margin-right: 52px;
 }
 
-.content-header__link {
+.header__link {
     color: #3D3D3D;
     text-decoration: none;
     font-size: 20px;
 }
 
 
-.content-logo {
-    grid-column: 3/12;
-    width: 776px;
-    height: 158px;
-    top: 50vh;
-    background-image: url(../images/logo_text.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/*.content-logo {*/
+/*    grid-column: 3/12;*/
+/*    width: 58vw;*/
+/*    height: 20vh;*/
+/*    top: 50vh;*/
+/*    background-image: url(../images/logo_text.png);*/
+/*    background-size: contain;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*}*/
 
 
 .content-main {
@@ -69,13 +69,13 @@ body {
 
 .fomka-img{
     top: 0;
-    left: 69vw;
-    width: 58vw;
+    left: 65vw;
+    width: 1vw;
     height: 130vh;
     /*transform: scale(1.5);*/
 
     position: absolute;
-    background-image: url(../images/fomka.svg);
+    background-image: url(../images/fmk2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
