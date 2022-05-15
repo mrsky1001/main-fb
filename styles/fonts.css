@@ -5,3 +5,8 @@
 * {
     font-family: Ubuntu, sans-serif;
 }
+
+@font-face {
+    font-family: viga; /* Гарнитура шрифта */
+    src: url(../fonts/Viga-Regular.ttf); /* Путь к файлу со шрифтом */
+}
