@@ -12,13 +12,16 @@
 <div class="content">
     <section class="start-page">
         <header class="start-page__header">
-            <nav>
+            <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Главная</a>
+                    </li>
                     <li class="header__item"><a href="#" class="header__link">Сервисы</a></li>
                     <li class="header__item"><a href="#" class="header__link">О нас</a></li>
                     <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
                 </ul>
+                <div class="header__img"></div>
             </nav>
         </header>
         <div class="start-page__logo">
@@ -59,34 +62,33 @@
             <div class="sections-page__main">
                 <div class="section-page__names-container">
                     <div class="list-border"></div>
-                    <ul class="sections-names">
+                    <ul id="sectionsNames" class="sections-names">
                         <li class="section-names__label">
-                            ЛАВКА
+                            <div class="section-names__text  section-name__store">ЛАВКА</div>
                         </li>
-                        <li class="section-names__label">
-                            РАЗРАБОТКА
+                        <li class="section-names__label ">
+                            <div class="section-names__text section-name__dev">РАЗРАБОТКА</div>
                         </li>
-                        <li class="section-names__label">
-                            ДИЗАЙН
+                        <li class="section-names__label ">
+                            <div class="section-names__text section-name__design">ДИЗАЙН</div>
                         </li>
-                        <li class="section-names__label">
-                            ПУТЕШЕСТВИЯ
+                        <li class="section-names__label ">
+                            <div class="section-names__text section-name__trip">ПУТЕШЕСТВИЯ</div>
                         </li>
-                        <li class="section-names__label">
-                            ДОМ
+                        <li class="section-names__label ">
+                            <div class="section-names__text section-name__home">ДОМ</div>
                         </li>
-                        <li class="section-names__label">
-                            ФОТОГРАФИЯ
+                        <li class="section-names__label ">
+                            <div class="section-names__text section-name__photo">ФОТОГРАФИЯ</div>
                         </li>
                     </ul>
                 </div>
                 <div class="sections-page__list-container">
                     <ul class="sections-page__list">
-                        <li class="section-list__block">
+                        <li id="storeSection" class="section-list__block">
                             <!--                        <div class="section__label">ЛАВКА</div>-->
                             <div class="section-list__main-block">
                                 <div class=" section-list__img-store section-list__img ">
-
                                 </div>
                                 <div class="section__text-block">
                                     <div class="section__pages">
@@ -102,14 +104,25 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="section-list__block">
+                        <li id="devSection" class="section-list__block">
                             <!--                        <div class="section__label">РАЗРАБОТКА</div>-->
                             <div class="section-list__main-block">
                                 <div class="section-list__img-dev section-list__img"></div>
-                                <div class="section__text-block"></div>
+                                 <div class="section__text-block">
+                                    <div class="section__pages">
+                                        <div class="section__pages-icon"></div>
+                                        <div class="section__pages-text">200 статей</div>
+                                    </div>
+                                    <div class="section__description">
+                                        Заметки из путешествий по нашей необъятной...
+                                    </div>
+                                    <div class="section__actions">
+                                        <a class="action__goto-section" href="https://foma-blog.ru">Перейти</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="section-list__block">
+                        <li  id="designSection" class="section-list__block">
                             <!--                        <div class="section__label">ДИЗАЙН</div>-->
                             <div class="section-list__main-block">
                                 <div class=" section-list__img-design section-list__img"></div>
@@ -118,25 +131,58 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="section-list__block">
+                        <li  id="tripSection" class="section-list__block">
                             <!--                        <div class="section__label">ПУТЕШЕСТВИЯ</div>-->
                             <div class="section-list__main-block">
                                 <div class="section-list__img-trip section-list__img"></div>
-                                <div class="section__text-block"></div>
+                                 <div class="section__text-block">
+                                    <div class="section__pages">
+                                        <div class="section__pages-icon"></div>
+                                        <div class="section__pages-text">200 статей</div>
+                                    </div>
+                                    <div class="section__description">
+                                        Заметки из путешествий по нашей необъятной...
+                                    </div>
+                                    <div class="section__actions">
+                                        <a class="action__goto-section" href="https://foma-blog.ru">Перейти</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="section-list__block">
+                        <li  id="homeSection" class="section-list__block">
                             <!--                        <div class="section__label">ДОМ</div>-->
                             <div class="section-list__main-block">
                                 <div class="section-list__img-home section-list__img"></div>
-                                <div class="section__text-block"></div>
+                                 <div class="section__text-block">
+                                    <div class="section__pages">
+                                        <div class="section__pages-icon"></div>
+                                        <div class="section__pages-text">200 статей</div>
+                                    </div>
+                                    <div class="section__description">
+                                        Заметки из путешествий по нашей необъятной...
+                                    </div>
+                                    <div class="section__actions">
+                                        <a class="action__goto-section" href="https://foma-blog.ru">Перейти</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="section-list__block">
+                        <li  id="photoSection" class="section-list__block">
                             <!--                        <div class="section__label">ФОТОГРАФИЯ</div>-->
                             <div class="section-list__main-block">
                                 <div class="section-list__img-photo section-list__img"></div>
-                                <div class="section__text-block"></div>
+                                 <div class="section__text-block">
+                                    <div class="section__pages">
+                                        <div class="section__pages-icon"></div>
+                                        <div class="section__pages-text">200 статей</div>
+                                    </div>
+                                    <div class="section__description">
+                                        Заметки из путешествий по нашей необъятной...
+                                    </div>
+                                    <div class="section__actions">
+                                        <a class="action__goto-section" href="https://foma-blog.ru">Перейти</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>

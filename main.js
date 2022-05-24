@@ -21,34 +21,62 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.about-page__authors'));
 
 
-const sections = ['section-list__img-store', 'section-list__img-dev', 'section-list__img-design', 'section-list__img-trip', 'section-list__img-home', 'section-list__img-photo']
+const sections = ['store', 'dev', 'design', 'trip', 'home', 'photo']
 
 sections.forEach(s => {
-    const section = document.getElementsByClassName(s)[0]
+    const section = document.getElementsByClassName('section-list__img-' + s)[0]
+    const sectionBlock = document.getElementById(s + 'Section')
+    const sectionName = document.getElementsByClassName('section-name__' + s)[0]
 
-    section.addEventListener('click', () => {
+    const selectSection = () => {
+        const otherSec = document.getElementsByClassName('section-list__img-gray')
+
+        if (otherSec.length) {
+            const text = document.querySelector('.section-list__img-gray ~ .section__text-block')
+            text?.classList.remove('section__text-block-show')
+            otherSec[0].classList.remove('section-list__img-gray')
+        }
+
         section.classList.add('section-list__img-gray')
 
         const text = document.querySelector('.section-list__img-gray ~ .section__text-block')
         text.classList.add('section__text-block-show')
+
+    }
+
+    sectionBlock.addEventListener('click', selectSection)
+    sectionName.addEventListener('click', selectSection)
+
+    sectionBlock.addEventListener('mouseover', () => {
+        sectionName.classList.add('section-name__hover')
     })
+
+    sectionBlock.addEventListener('mouseout', () => {
+        sectionName.classList.remove('section-name__hover')
+    })
+
+    sectionName.addEventListener('mouseover', () => {
+        section.classList.add('section-list__img-hover')
+    })
+
+    sectionName.addEventListener('mouseout', () => {
+        section.classList.remove('section-list__img-hover')
+    })
+
 })
 
 document.addEventListener('click', (e) => {
 
     sections.forEach((s) => {
-        if (!e.target.className.includes(s)
-            && !e.target.className.includes('section__text-block-show')
-            && !e.target.className.includes('section-list__main-block')
-        ) {
-            const section = document.getElementsByClassName(s)[0]
+        const sectionBlock = document.getElementById(s + 'Section')
+        const sectionsNames = document.getElementById('sectionsNames')
 
-            if(section.className.includes('section-list__img-gray')) {
-                const text = document.querySelector('.section-list__img-gray ~ .section__text-block')
-                text?.classList.remove('section__text-block-show')
-            }
+        if (!sectionBlock.contains(e.target) && !sectionsNames.contains(e.target)) {
+            const section = document.getElementsByClassName('section-list__img-' + s)[0]
+            const text = document.querySelector('.section-list__img-' + s + ' ~ .section__text-block-show')
 
-            section.classList.remove('section-list__img-gray')
+            text?.classList.remove('section__text-block-show')
+            section?.classList.remove('section-list__img-gray')
         }
     })
 
