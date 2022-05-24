@@ -65,6 +65,7 @@ sections.forEach(s => {
 
 })
 
+
 document.addEventListener('click', (e) => {
 
     sections.forEach((s) => {
@@ -80,4 +81,16 @@ document.addEventListener('click', (e) => {
         }
     })
 
+})
+
+const header = document.getElementsByClassName('start-page__header')[0]
+const headerBgImg = document.getElementsByClassName('header__img')[0]
+
+header.addEventListener('mouseover', (e) => {
+    headerBgImg.classList.add('header__img-hover')
+})
+
+
+header.addEventListener('mouseout', (e) => {
+    headerBgImg.classList.remove('header__img-hover')
 })
