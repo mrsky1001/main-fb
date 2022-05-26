@@ -96,81 +96,20 @@ header.addEventListener('mouseout', (e) => {
 })
 
 
-const products = ['wallet', 'tShort', 'shopper']
-
 const center = document.getElementsByClassName('products-slider__center-img')[0]
+const centerDescription = document.getElementsByClassName('products-slider__center-description')[0]
 const after = document.getElementsByClassName('products-slider__right-img')[0]
 const before = document.getElementsByClassName('products-slider__left-img')[0]
 
-after.addEventListener('click', () => {
-    const selectedText = document.getElementsByClassName('product-name__selected')[0]
-    const nameSelected = products.find(p => selectedText.className.includes(p))
-    const nameSelectedIdx = products.indexOf(nameSelected)
-    let name
-    let nameIdx
-
-    if (nameSelectedIdx === products.length - 1) {
-        name = products[0]
-        nameIdx = 0
-    } else {
-        name = products[nameSelectedIdx + 1]
-        nameIdx = nameSelectedIdx + 1
-    }
-
-    console.log(name, nameIdx)
-
-    selectProduct(name, nameIdx)
-})
-
-before.addEventListener('click', () => {
-    const selectedText = document.getElementsByClassName('product-name__selected')[0]
-    const nameSelected = products.find(p => selectedText.className.includes(p))
-    const nameSelectedIdx = products.indexOf(nameSelected)
-    let name = ''
-    let nameIdx = 0
-
-    if (nameSelectedIdx === 0) {
-        name = products[products.length - 1]
-        nameIdx = products.length - 1
-    } else {
-        name = products[nameSelectedIdx - 1]
-        nameIdx = nameSelectedIdx - 1
-    }
-
-    console.log(name, nameIdx)
-
-    selectProduct(name, nameIdx)
-})
-
-const clickAfterBefore = (operand) => {
-    const selectedText = document.getElementsByClassName('product-name__selected')[0]
-    const nameSelected = products.find(p => selectedText.className.includes(p))
-    const nameSelectedIdx = products.indexOf(nameSelected)
-    let name = ''
-    let nameIdx = 0
-
-    if (nameSelectedIdx === 0) {
-        name = products[products.length - 1]
-        nameIdx = products.length - 1
-    } else if (nameSelectedIdx === products.length - 1) {
-        name = products[0]
-        name = 0
-    } else {
-        name = products[nameSelectedIdx + 1]
-        name = nameSelectedIdx + 1
-    }
-
-    console.log(name, nameIdx)
-
-    selectProduct(name, nameIdx)
-}
 const selectProduct = (p, i) => {
-    const productName = document.getElementsByClassName('product-name__' + p)[0]
-    const beforeText = i === 0 ? products[products.length - 1] : products[i - 1]
-    const afterText = i === products.length - 1 ? products[0] : products[i + 1]
+    console.log(p)
+    const productName = document.getElementById(p.name + 'ProductName')
+    const beforeText = i === 0 ? products[products.length - 1].name : products[i - 1].name
+    const afterText = i === products.length - 1 ? products[0].name : products[i + 1].name
 
     before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')";
-    center.style.backgroundImage = "url('../images/products/" + p + ".png')";
+    center.style.backgroundImage = "url('../images/products/" + p.name + ".png')";
+    centerDescription.innerHTML = p.rusDescription;
     center.classList.add('products-slider__show-animate')
 
     const pName = document.getElementsByClassName('product-name__selected')[0]
@@ -185,15 +124,59 @@ const selectProduct = (p, i) => {
     after.style.backgroundImage = "url('../images/products/" + afterText + ".png')";
 }
 
+const onClickAfterBeforeSlider = (isAfter = false) => {
+    const selectedText = document.getElementsByClassName('product-name__selected')[0]
+    const selectedProduct = products.find(p => selectedText.id === p.name + 'ProductName')
+    const selectedProductIdx = products.indexOf(selectedProduct)
+
+    let product = ''
+    let productIdx = 0
+
+    console.log(selectedProduct)
+    console.log(selectedProductIdx)
+    console.log(isAfter)
+
+    const increase = isAfter ? 1 : -1
+
+    if (selectedProductIdx === 0 && !isAfter) {
+        product = products[products.length - 1]
+        productIdx = products.length - 1
+    } else if (selectedProductIdx === products.length - 1 && isAfter) {
+        product = products[0]
+        productIdx = 0
+    } else {
+        product = products[selectedProductIdx + increase]
+        productIdx = selectedProductIdx + increase
+    }
+
+    selectProduct(product, productIdx)
+}
+
+after.addEventListener('click', () => onClickAfterBeforeSlider(true))
+before.addEventListener('click', () => onClickAfterBeforeSlider(false))
+const productListEl = document.getElementsByClassName('products-names__list')[0]
+
 products.forEach((p, i) => {
-    const productName = document.getElementsByClassName('product-name__' + p)[0]
+    const selectedClass = i === 1 ? ' product-name__selected' : ''
 
-    productName.addEventListener('click', () => selectProduct(p, i))
-
-
+    productListEl.innerHTML += '<li id="' + p.name + 'Product" class="product-names__label ">' +
+        ' <div id="' + p.name + 'ProductName" class="product-names__text' + selectedClass + '">' + p.rusName + '</div>' +
+        ' </li>'
 })
 
+products.forEach((p, i) => {
+    const product = document.getElementById(p.name + 'ProductName')
+    product.addEventListener('click', () => {
+        selectProduct(p, i)
+    })
+})
+
+before.style.backgroundImage = "url('../images/products/" + products[0].name + ".png')";
+center.style.backgroundImage = "url('../images/products/" + products[1].name + ".png')";
+centerDescription.innerHTML = products[1].rusDescription;
+after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')";
 
 setTimeout(() => {
     window.scrollBy(0, 3350)
 }, 2000)
+
