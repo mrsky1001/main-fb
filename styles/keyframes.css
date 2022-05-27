@@ -1,0 +1,148 @@
+/*
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 16:01
+ */
+
+
+
+
+@keyframes satur-blur-filter-out {
+    0% {
+        filter: saturate(0) blur(1px);
+    }
+    100% {
+        filter: none;
+
+    }
+}
+
+@keyframes satur-blur-filter-in {
+    0% {
+        filter: none;
+
+    }
+    100% {
+        filter: saturate(0) blur(1px);
+    }
+}
+
+
+@keyframes image-filter {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
+
+
+@keyframes display-in {
+    0% {
+        filter: saturate(0) contrast(0.9);
+
+        /*background-image: initial;*/
+        /*display: initial;*/
+    }
+    50% {
+        /*background-image: ;*/
+        filter: saturate(1) contrast(1);
+    }
+    100% {
+        filter: saturate(1) contrast(1);
+        background-image: url(../images/section__names.png);
+        /*display: none;*/
+    }
+}
+
+@keyframes display-out {
+    0% {
+        background-image: url(../images/section__names.png);
+        /*display: none;*/
+    }
+    50% {
+        filter: saturate(0) contrast(0.9);
+    }
+    100% {
+        filter: saturate(0) contrast(0.9);
+        /*display: block;*/
+    }
+}
+
+
+@keyframes filter-in {
+    0% {
+        filter: saturate(0) contrast(0.9);
+    }
+    100% {
+        filter: saturate(1) contrast(1);
+    }
+}
+
+@keyframes filter-out {
+    0% {
+        filter: saturate(1) contrast(1);
+    }
+    100% {
+        filter: saturate(0) contrast(0.9);
+    }
+
+}
+
+@keyframes blur-filter-in {
+    0% {
+        filter: saturate(0) contrast(0.9) blur(1px);
+    }
+    100% {
+        filter: saturate(0) contrast(0.9) blur(0px);
+    }
+
+}
+
+
+@keyframes bold-in {
+    0% {
+        font-weight: 500;
+        font-size: unset;
+    }
+    100% {
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+
+@keyframes bold-out {
+    0% {
+        font-weight: bolder;
+        font-size: large;
+    }
+    100% {
+        font-weight: 500;
+        font-size: unset;
+    }
+}
+
+@keyframes move-down {
+    0% {
+        top: -520px;
+    }
+    50% {
+        top: -520px;
+    }
+    100% {
+        top: -420px;
+    }
+}
+
+@keyframes move-up {
+    0% {
+        top: -420px;
+    }
+    50% {
+        top: -420px;
+    }
+    100% {
+        top: -520px;
+    }
+}

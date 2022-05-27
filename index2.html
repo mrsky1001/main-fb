@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="styles/normalize.css"/>
     <link rel="stylesheet" href="styles/fonts.css"/>
     <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/keyframes.css"/>
+    <link rel="stylesheet" href="styles/medias.css"/>
+    <link rel="stylesheet" href="styles/bg-images.css"/>
+    <link rel="stylesheet" href="styles/start-page.css"/>
+    <link rel="stylesheet" href="styles/about-page.css"/>
+    <link rel="stylesheet" href="styles/sections-page.css"/>
+    <link rel="stylesheet" href="styles/products-page.css"/>
+    <link rel="stylesheet" href="styles/contacts-page.css"/>
     <!--    <link rel="icon" href="fb15.png">-->
 </head>
 <body>
@@ -234,22 +242,44 @@
                 </div>
             </div>
         </section>
+        <section class="contacts-page">
+            <div class="contacts-header">
+                <h2 class="contacts-text__header">
+                    Связаться с нами
+                </h2>
+            </div>
+            <div class="contacts-main">
+                <div class="contacts-name__wrapper">
+
+                    <!--                    <div class="contacts-name__label">-->
+                    <!--                    </div>-->
+                    <div class=" contacts-control contacts-name__input">
+                        <label class="contacts-control__label" for="contacts-name">Имя</label>
+                        <input id="contacts-name" class="contacts-control__input" type="text" placeholder="Напишите ваше имя"/>
+                    </div>
+                </div>
+                <div class="contacts-email__wrapper">
+                    <div class="contacts-control contacts-email__input">
+                        <label class="contacts-control__label" for="contacts-email">E-mail</label>
+                        <input id="contacts-email" class="contacts-control__input" type="email" placeholder="Напишите ваш e-mail"/>
+                    </div>
+                </div>
+                <div class="contacts-question__wrapper">
+                    <div class="contacts-question__input contacts-control">
+                        <label class=" contacts-control__label" for="contacts-question">Ваш e-mail</label>
+                        <textarea id="contacts-question" class="contacts-control__input" rows="10" placeholder="Напишите нам вопрос, который вас заинтересовал :D"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </div>
-<div class="fomka-img ">
-
-</div>
-
-<div class="section-names__bg">
-</div>
-
-
-<div class="about-bg">
-</div>
-
-<div class="product-bg">
-</div>
-<script lang="js" src="listProducts.js"></script>
+<div class="fomka-img "></div>
+<div class="fomka-img__bottom "></div>
+<div class="section-names__bg"></div>
+<div class="about-bg"></div>
+<div class="product-bg"></div>
+<script lang="js" src="list-products.js"></script>
 <script lang="js" src="main.js"></script>
 </body>
 

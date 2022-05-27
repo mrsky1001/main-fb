@@ -4,21 +4,21 @@
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        const square = entry.target.querySelector('.authors__img');
+        const square = entry.target.querySelector('.authors__img')
 
         if (entry.isIntersecting) {
             setTimeout(() => {
-                square.classList.add('authors-img__animation');
-                return; // if we added the class, exit the function
+                square.classList.add('authors-img__animation')
+                return // if we added the class, exit the function
             }, 1000)
         }
 
         // We're not intersecting, so remove the class!
-        square.classList.remove('authors-img__animation');
-    });
-});
+        square.classList.remove('authors-img__animation')
+    })
+})
 
-observer.observe(document.querySelector('.about-page__authors'));
+observer.observe(document.querySelector('.about-page__authors'))
 
 
 const sections = ['store', 'dev', 'design', 'trip', 'home', 'photo']
@@ -102,14 +102,14 @@ const after = document.getElementsByClassName('products-slider__right-img')[0]
 const before = document.getElementsByClassName('products-slider__left-img')[0]
 
 const selectProduct = (p, i) => {
-    console.log(p)
     const productName = document.getElementById(p.name + 'ProductName')
     const beforeText = i === 0 ? products[products.length - 1].name : products[i - 1].name
     const afterText = i === products.length - 1 ? products[0].name : products[i + 1].name
 
-    before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')";
-    center.style.backgroundImage = "url('../images/products/" + p.name + ".png')";
-    centerDescription.innerHTML = p.rusDescription;
+    before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')"
+    center.style.backgroundImage = "url('../images/products/" + p.name + ".png')"
+    center.style.transform =  ('scale(' + p.scale + ')')
+    centerDescription.innerHTML = p.rusDescription
     center.classList.add('products-slider__show-animate')
 
     const pName = document.getElementsByClassName('product-name__selected')[0]
@@ -121,7 +121,7 @@ const selectProduct = (p, i) => {
 
     productName.classList.add('product-name__selected')
 
-    after.style.backgroundImage = "url('../images/products/" + afterText + ".png')";
+    after.style.backgroundImage = "url('../images/products/" + afterText + ".png')"
 }
 
 const onClickAfterBeforeSlider = (isAfter = false) => {
@@ -131,10 +131,6 @@ const onClickAfterBeforeSlider = (isAfter = false) => {
 
     let product = ''
     let productIdx = 0
-
-    console.log(selectedProduct)
-    console.log(selectedProductIdx)
-    console.log(isAfter)
 
     const increase = isAfter ? 1 : -1
 
@@ -171,12 +167,9 @@ products.forEach((p, i) => {
     })
 })
 
-before.style.backgroundImage = "url('../images/products/" + products[0].name + ".png')";
-center.style.backgroundImage = "url('../images/products/" + products[1].name + ".png')";
-centerDescription.innerHTML = products[1].rusDescription;
-after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')";
-
-setTimeout(() => {
-    window.scrollBy(0, 3350)
-}, 2000)
+before.style.backgroundImage = "url('../images/products/" + products[0].name + ".png')"
+center.style.backgroundImage = "url('../images/products/" + products[1].name + ".png')"
+center.style.transform = ('scale(' + products[1].scale + ')')
+centerDescription.innerHTML = products[1].rusDescription
+after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')"
 

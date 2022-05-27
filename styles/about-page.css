@@ -1,0 +1,60 @@
+/*
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 15:55
+ */
+
+
+
+
+.about-page {
+    grid-column: 1/12;
+    color: white;
+    height: 120vh;
+    /*display: grid;*/
+    display: flex;
+    justify-content: center;
+    line-height: 26px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.about-page__text {
+    max-width: 405px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    /*grid-row: 1/1;*/
+    /*grid-column: 9/12;*/
+}
+
+.about-page__authors {
+    width: 35vw;
+    height: 40vh;
+    min-width: 346px;
+    display: flex;
+    /*justify-content: center;*/
+    /*grid-row: 1/1;*/
+    /*grid-column: 1/12;*/
+}
+
+.authors__img {
+    width: 75%;
+    height: 100%;
+    background-image: url(../images/about_authors__color.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: saturate(0) contrast(0.9) blur(1px);
+    animation: filter-out 2s ease-out;
+
+}
+
+.authors-img__animation {
+    filter: saturate(0) contrast(0.9) blur(0px);
+    animation: blur-filter-in 1s ease-out;
+    animation: filter-out 1s ease-out;
+}
+
+.authors-img__animation:hover {
+    filter: saturate(1) contrast(1);
+    animation: filter-in 1s ease-out;
+}

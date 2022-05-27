@@ -1,0 +1,185 @@
+/*
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 15:55
+ */
+
+
+.products-page {
+    grid-column: 1/12;
+    height: 151vh;
+    position: relative;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.products-header {
+    width: 100%;
+}
+
+.products-text__header {
+    padding-left: 13vw;
+}
+
+.products-main {
+    /* grid-column: 1/12; */
+    /* grid-row: 1; */
+    /* display: grid; */
+    display: grid;
+    width: 100%;
+    height: 80vh;
+}
+
+.products-names {
+    grid-column: 4/17;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.products-names__list {
+    list-style: none;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.product-names__label {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.product-names__text {
+    position: absolute;
+}
+
+.product-name__selected, .product-names__label:hover {
+    color: rgb(221 255 140);
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.products-slider {
+    grid-column: 9/14;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-slider__element:hover {
+    cursor: pointer;
+}
+
+.products-slider__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    align-items: flex-end;
+    margin: 0 0 101px 0px;
+}
+
+.products-slider__left {
+    position: relative;
+}
+
+.product__bg {
+    z-index: -1;
+    width: 60vw;
+    height: 87vH;
+    /*left: -595px;*/
+    left: 27vw;
+    top: 33vh;
+    filter: drop-shadow(2px 4px 6px black);
+    /* min-width: 494px; */
+    /* min-height: 560px; */
+    position: absolute;
+    background-image: url(../images/section-bg__white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.products-slider__center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-slider__left-img {
+    z-index: 1;
+    width: 8vw;
+    filter: saturate(0) blur(1px);
+    height: 11vh;
+    /* filter: saturate(0); */
+    /*background-image: url(../images/products/wallet.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: satur-blur-filter-in 0.5s ease-in-out;
+
+}
+
+.products-slider__left-img:hover {
+    filter: none;
+    animation: satur-blur-filter-out 0.5s ease-in-out;
+}
+
+.products-slider__center-img {
+    width: 25vw;
+    height: 48vh;
+    /*background-image: url(../images/products/tShort.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+.center-description__container {
+    position: relative;
+    width: inherit;
+    width: 25vw;
+}
+
+.products-slider__center-description {
+    color: #3D3D3D;
+    text-align: center;
+    position: absolute;
+    margin: 20px 0 0 0;
+    /* left: 46%; */
+    width: 100%;
+    /* left: -25px; */
+    /* margin: 0 auto; */
+}
+
+.products-slider__show-animate {
+    opacity: 1;
+    animation: image-filter 1s ease-out;
+}
+
+.products-slider__right-img {
+    /*background-image: url(../images/products/shopper.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8vw;
+    filter: saturate(0) blur(1px);
+    height: 11vh;
+    animation: satur-blur-filter-in 0.5s ease-in-out;
+}
+
+.products-slider__right-img:hover {
+    filter: none;
+    animation: satur-blur-filter-out 0.5s ease-in-out;
+}
