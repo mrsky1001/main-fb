@@ -1,49 +1,49 @@
-/*
- * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 15:55
- */
-
 
 .contacts-page {
     grid-column: 1/12;
     color: #3D3D3D;
-    height: 74vh;
+    height: 135vh;
     position: relative;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
     letter-spacing: 1px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contacts-header {
     width: 100%;
+    margin-top: 17vh;
 }
 
 .contacts-text__header {
-    padding-left: 13vw;
+    padding-left: 15.5vw;
 }
 
 .contacts-main {
     display: grid;
-    width: 100%;
-    height: 38vh;
+    /* width: 100%; */
+    height: 68vh;
+    /* max-width: 96vw; */
     margin-top: 10vh;
 }
-
+.contacts-control__wrapper{
+    grid-column: 4/12;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
 .contacts-name__wrapper {
-    grid-column: 3/12;
     grid-row: 1;
     /* height: 2px; */
+    max-width: 42vw;
 }
 
 .contacts-email__wrapper {
-    grid-column: 3/12;
     grid-row: 2;
 }
 
 .contacts-question__wrapper {
-    grid-column: 3/12;
     grid-row: 3;
 }
 
@@ -60,106 +60,14 @@
 }
 
 .contacts-control {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 50px;
-}
-
-.contacts-control__label {
-    font-size: large;
-    margin-bottom: 15px;
-}
-
-.contacts-control__input {
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    /*transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
-}
-
-.contacts-control__input:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: rgb(216 239 161);
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(221 255 140 / 28%);
-}
-
-#contacts-question{
-/*
-* Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 15:55
-*/
-
-
-.contacts-page {
-    grid-column: 1/12;
-    color: #3D3D3D;
-    height: 74vh;
     position: relative;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    letter-spacing: 1px;
-}
-
-.contacts-header {
-    width: 100%;
-}
-
-.contacts-text__header {
-    padding-left: 13vw;
-}
-
-.contacts-main {
-    display: grid;
-    width: 100%;
-    height: 38vh;
-    margin-top: 10vh;
-}
-
-.contacts-name__wrapper {
-    grid-column: 3/12;
-    grid-row: 1;
-    /* height: 2px; */
-}
-
-.contacts-email__wrapper {
-    grid-column: 3/12;
-    grid-row: 2;
-}
-
-.contacts-question__wrapper {
-    grid-column: 3/12;
-    grid-row: 3;
-}
-
-.contacts-email__input {
-
-}
-
-.contacts-name__input {
-
-}
-
-.contacts-question__input {
-
-}
-
-.contacts-control {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 50px;
+    /* margin-bottom: -47px; */
+    /* max-width: 348px; */
+    /* height: 15vh; */
 }
 
 .contacts-control__label {
@@ -191,3 +99,33 @@
     width: 40vw;
 
 }
+
+.contacts-actions__wrapper{
+    grid-column: 4/12;
+    grid-row: 4;
+    max-width: 41vw;
+}
+
+.contacts-actions{
+    display: flex;
+    justify-content: right;
+}
+
+.contacts-actions__save-btn{
+
+}
+
+/*.control-bg{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    background-image: url(../images/section__names.png);*/
+/*    background-size: contain;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    display: flex;*/
+/*    color: white;*/
+/*    flex-wrap: wrap;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/

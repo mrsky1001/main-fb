@@ -231,7 +231,6 @@
                         <div class="products-slider__element products-slider__center">
                             <div class="products-slider__center-img"></div>
                             <div class="center-description__container">
-                                <div class="product-description__bg"></div>
                                 <div class="products-slider__center-description"></div>
                             </div>
                         </div>
@@ -248,29 +247,40 @@
                     Связаться с нами
                 </h2>
             </div>
-            <div class="contacts-main">
-                <div class="contacts-name__wrapper">
+            <form class="contacts-main">
+                <div class="contacts-name__wrapper contacts-control__wrapper">
 
                     <!--                    <div class="contacts-name__label">-->
                     <!--                    </div>-->
                     <div class=" contacts-control contacts-name__input">
-                        <label class="contacts-control__label" for="contacts-name">Имя</label>
-                        <input id="contacts-name" class="contacts-control__input" type="text" placeholder="Напишите ваше имя"/>
+                        <!--                        <div class="control-bg"></div>-->
+                        <label class="contacts-control__label" for="contacts-name" minlength="3" maxlength="30">Имя</label>
+                        <input id="contacts-name" class="contacts-control__input" type="text"
+                               placeholder="Напишите своё имя..." required/>
                     </div>
                 </div>
-                <div class="contacts-email__wrapper">
+                <div class="contacts-email__wrapper contacts-control__wrapper">
                     <div class="contacts-control contacts-email__input">
-                        <label class="contacts-control__label" for="contacts-email">E-mail</label>
-                        <input id="contacts-email" class="contacts-control__input" type="email" placeholder="Напишите ваш e-mail"/>
+                        <!--                        <div class="control-bg"></div>-->
+                        <label class="contacts-control__label" for="contacts-email" >E-mail</label>
+                        <input id="contacts-email" required class="contacts-control__input" minlength="6" maxlength="20" type="email"
+                               placeholder="Напишите свой e-mail..."/>
                     </div>
                 </div>
-                <div class="contacts-question__wrapper">
+                <div class="contacts-question__wrapper contacts-control__wrapper">
                     <div class="contacts-question__input contacts-control">
-                        <label class=" contacts-control__label" for="contacts-question">Ваш e-mail</label>
-                        <textarea id="contacts-question" class="contacts-control__input" rows="10" placeholder="Напишите нам вопрос, который вас заинтересовал :D"></textarea>
+                        <!--                        <div class="control-bg"></div>-->
+                        <label class=" contacts-control__label" for="contacts-question">Вопрос</label>
+                        <textarea id="contacts-question" required class="contacts-control__input" minlength="10" maxlength="1000" rows="10"
+                                  placeholder="Напишите нам вопрос, который вас заинтересовал..."></textarea>
                     </div>
                 </div>
-            </div>
+                <div class="contacts-actions__wrapper">
+                    <div class="contacts-actions">
+                        <button type="submit" class="contacts-actions__save-btn">Отправить</button>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
 </div>
