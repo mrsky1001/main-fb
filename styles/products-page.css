@@ -43,16 +43,16 @@
 
 .products-names__list {
     list-style: none;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .product-names__label {
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 50px;
     position: relative;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .product-name__selected, .product-names__label:hover {
-    color: rgb(221 255 140);
+    color: rgb(214 255 0);
     font-size: 20px;
     cursor: pointer;
 
@@ -104,7 +104,7 @@
     /* min-width: 494px; */
     /* min-height: 560px; */
     position: absolute;
-    background-image: url(../images/section-bg__white.png);
+    background-image: url(../images/bg/palet-bg__white-stretch.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -86,13 +86,23 @@ document.addEventListener('click', (e) => {
 const header = document.getElementsByClassName('start-page__header')[0]
 const headerBgImg = document.getElementsByClassName('header__img')[0]
 
-header.addEventListener('mouseover', (e) => {
+const showHeader = (e) => {
     headerBgImg.classList.add('header__img-hover')
-})
+    setTimeout(()=>{
+        const headerList = document.getElementsByClassName('header__list')[0]
+        headerList.classList.add('header-list__hover')
+    }, 500)
+}
+header.addEventListener('mouseenter', showHeader)
+header.addEventListener('mouseover', showHeader)
 
 
-header.addEventListener('mouseout', (e) => {
+header.addEventListener('mouseleave', (e) => {
     headerBgImg.classList.remove('header__img-hover')
+    setTimeout(()=>{
+        const headerList = document.getElementsByClassName('header__list')[0]
+        headerList.classList.remove('header-list__hover')
+    }, 1000)
 })
 
 
@@ -108,7 +118,7 @@ const selectProduct = (p, i) => {
 
     before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')"
     center.style.backgroundImage = "url('../images/products/" + p.name + ".png')"
-    center.style.transform =  ('scale(' + p.scale + ')')
+    center.style.transform = ('scale(' + p.scale + ')')
     centerDescription.innerHTML = p.rusDescription
     center.classList.add('products-slider__show-animate')
 
@@ -172,4 +182,3 @@ center.style.backgroundImage = "url('../images/products/" + products[1].name + "
 center.style.transform = ('scale(' + products[1].scale + ')')
 centerDescription.innerHTML = products[1].rusDescription
 after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')"
-

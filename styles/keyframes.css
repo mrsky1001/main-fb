@@ -51,14 +51,14 @@
     }
     100% {
         filter: saturate(1) contrast(1);
-        background-image: url(../images/section__names.png);
+        background-image: url(../images/bg/palet-bg__gray.png);
         /*display: none;*/
     }
 }
 
 @keyframes display-out {
     0% {
-        background-image: url(../images/section__names.png);
+        background-image: url(../images/bg/palet-bg__gray.png);
         /*display: none;*/
     }
     50% {

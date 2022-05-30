@@ -76,7 +76,7 @@
     cursor: pointer;
     font-weight: bolder;
     font-size: 18px;
-    color: rgb(221 255 140);
+    color: rgb(214 255 0);
 }
 
 .section-names__text {
@@ -86,7 +86,7 @@
 .section-name__hover {
     font-weight: bolder;
     font-size: 18px;
-    color: rgb(221 255 140);
+    color: rgb(214 255 0);
 }
 
 .sections-page__list-container {
@@ -198,7 +198,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../images/section-page__icon.svg) !important;
+    background-image: url(../images/icon__articles.svg) !important;
 }
 
 .section__actions {
@@ -242,7 +242,7 @@
 .section-list__img-gray {
     cursor: none;
     transform: scale(130%);
-    background-image: url(../images/section__names.png) !important;
+    background-image: url(../images/bg/palet-bg__gray.png) !important;
 }
 
 .section-list__img-store {

@@ -1,0 +1,88 @@
+/*
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  30.05.2022, 15:12
+ */
+
+.footer {
+    position: relative;
+}
+
+.footer-nav__container {
+    grid-row: 1;
+    grid-column: 9/12;
+}
+
+.footer-rights {
+    grid-row: 1;
+    grid-column: 12/12;
+    max-width: 393px;
+    white-space: pre-line;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.footer__nav {
+    /* margin-top: 8vh; */
+    /* position: relative; */
+    /* max-width: 600px; */
+    /* width: 100%; */
+    /*font-size: 8vw;*/
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer__link:hover {
+    color: rgb(214 255 0);
+}
+
+
+.footer-bg {
+    z-index: -2;
+    width: 101%;
+    /* left: -20px; */
+    margin-left: -19px;
+    height: 414px;
+    display: grid;
+    color: white;
+    letter-spacing: 1.2px;
+    /* position: absolute; */
+    /* padding: 0 60px 20px 60px; */
+    background-image: url(../images/bg/wave-bg__gray.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: end;
+    padding: 0 0 30px 0;
+}
+
+.footer__item {
+    margin-bottom: 20px;
+}
+
+.footer-fomka {
+    grid-column: 4/12;
+    grid-row: 1;
+    filter: invert(1);
+    height: 200px;
+    width: 200px;
+    margin: 0 0 26px 105px;
+    background-image: url(../images/fomka__small.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}

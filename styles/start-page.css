@@ -46,7 +46,7 @@
 
 .header__list {
     list-style: none;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding-left: 0;
@@ -54,6 +54,11 @@
     flex-wrap: wrap;
     z-index: 2;
 
+
+}
+
+.header-list__hover{
+    display: flex;
 }
 
 .header__nav {
@@ -71,7 +76,7 @@
 }
 
 .header__link:hover {
-    color: rgb(221 255 140);
+    color: rgb(214 255 0);
 }
 
 .header__img {
@@ -81,7 +86,7 @@
     height: 550px;
     left: -100px;
     z-index: -1;
-    background-image: url(../images/section__names.png);
+    background-image: url(../images/bg/palet-bg__gray.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
