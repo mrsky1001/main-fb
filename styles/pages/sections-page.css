@@ -1,13 +1,12 @@
 /*
- * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 15:55
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  31.05.2022, 9:29
  */
 
 
 .sections-page {
     grid-column: 1/12;
     color: #3D3D3D;
-    height: 120vh;
-
+    height: 98vh;
     /* display: grid; */
     position: relative;
     display: flex;
@@ -17,7 +16,6 @@
     align-content: center;
     justify-content: center;
     letter-spacing: 1px;
-
 }
 
 
@@ -92,6 +90,7 @@
 .sections-page__list-container {
     grid-column: 10/12;
     grid-row: 1;
+    /* max-width: 716px; */
     max-width: 1215px;
 }
 
@@ -114,14 +113,15 @@
     width: 100%;
     /*max-width: 800px;*/
     /*justify-content: center;*/
-    display: flex;
-    max-width: 1450px;
+    display: grid;
+    /* max-width: 1450px; */
     margin-bottom: 5%;
-
+    /* grid-column: 3/15; */
 }
 
 .section__title h2 {
     margin-left: 1%;
+    grid-column: 3/15;
 }
 
 .section-list__block {
@@ -198,7 +198,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../images/icon__articles.svg) !important;
+    background-image: url(../../images/icon__articles.svg) !important;
 }
 
 .section__actions {
@@ -242,29 +242,84 @@
 .section-list__img-gray {
     cursor: none;
     transform: scale(130%);
-    background-image: url(../images/bg/palet-bg__gray.png) !important;
+    background-image: url(../../images/bg/palet-bg__gray.png) !important;
 }
 
 .section-list__img-store {
-    background-image: url(../images/sections/store.png);
+    background-image: url(../../images/sections/store.png);
 }
 
 .section-list__img-dev {
-    background-image: url(../images/sections/dev.png);
+    background-image: url(../../images/sections/dev.png);
 }
 
 .section-list__img-design {
-    background-image: url(../images/sections/design.png);
+    background-image: url(../../images/sections/design.png);
 }
 
 .section-list__img-trip {
-    background-image: url(../images/sections/trip.png);
+    background-image: url(../../images/sections/trip.png);
 }
 
 .section-list__img-home {
-    background-image: url(../images/sections/home.png);
+    background-image: url(../../images/sections/home.png);
 }
 
 .section-list__img-photo {
-    background-image: url(../images/sections/photo.png);
+    background-image: url(../../images/sections/photo.png);
+}
+
+
+.section-names__bg {
+    z-index: -1;
+    width: 53%;
+    height: 562px;
+    /*left: -595px;*/
+    left: -473px;
+    top: 243vh;
+    min-width: 705px;
+    min-height: 560px;
+    position: absolute;
+    background-image: url(../../images/bg/palet-bg__gray.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (max-width: 480px) {
+    /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (max-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (max-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (max-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (max-width: 1281px) {
+    /* hi-res laptops and desktops */
+    .section-names__bg {
+        min-width: 872px;
+    }
+
+
+    .section-page__names-container {
+        grid-row: 1;
+    }
+
+    .sections-page__list-container {
+        grid-column: 10/12;
+        max-width: 716px;
+    }
 }

@@ -1,8 +1,6 @@
 /*
- * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 15:55
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  31.05.2022, 9:29
  */
-
-
 
 
 .about-page {
@@ -39,7 +37,7 @@
 .authors__img {
     width: 75%;
     height: 100%;
-    background-image: url(../images/authors.png);
+    background-image: url(../../images/authors.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,4 +55,45 @@
 .authors-img__animation:hover {
     filter: saturate(1) contrast(1);
     animation: filter-in 1s ease-out;
+}
+
+
+.about-bg {
+    z-index: -1;
+    width: 100%;
+    height: 1456px;
+    left: 0;
+    top: 72vh;
+    position: absolute;
+    background-image: url(../../images/bg/wave-bg__gray.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+@media (max-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (max-width: 480px) {
+    /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (max-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (max-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (max-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (max-width: 1281px) {
+    /* hi-res laptops and desktops */
+
 }

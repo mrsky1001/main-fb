@@ -1,8 +1,12 @@
+/*
+ * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  31.05.2022, 9:29
+ */
+
 
 .contacts-page {
     grid-column: 1/12;
     color: #3D3D3D;
-    height: 96vh;
+    height: 80vh;
     position: relative;
     display: flex;
     letter-spacing: 1px;
@@ -12,7 +16,9 @@
 
 .contacts-header {
     width: 100%;
-    margin-top: 17vh;
+    /* margin-top: 8vh; */
+    /* margin-top: 53px; */
+    margin: 24px 0 0 0;
 }
 
 .contacts-text__header {
@@ -173,9 +179,10 @@
 .contacts-textarea {
     padding-top: 15px;
     /* width: 40vw; */
+    line-height: 1.4;
 }
 
-.contacts-actions__save-btn{
+.contacts-actions__save-btn {
     border: 0;
     background-color: transparent;
     width: 178px;
@@ -186,13 +193,59 @@
     letter-spacing: 0.5px;
     font-weight: 500;
     /* filter: hue-rotate(288deg); */
-    background-image: url(../images/bg/palet-bg__gray-stretch.png);
+    background-image: url(../../images/bg/palet-bg__gray-stretch.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.contacts-actions__save-btn:hover{
+.contacts-actions__save-btn:hover {
     color: rgb(214 255 0);
     /* filter: hue-rotate(120deg); */
+}
+
+.fomka-img__bottom {
+    top: 399vh;
+    left: 0;
+    width: 100vw;
+    height: 139vh;
+    z-index: -2;
+    /*transform: scale(1.5);*/
+    /* opacity: 0.3; */
+    position: absolute;
+    background-image: url(../../images/fomka__small.svg);
+    background-size: 119vw 114vh;
+    background-repeat: no-repeat;
+    background-position: top -13vw right -45vw;
+    /*-webkit-filter: drop-shadow(0px 4px 4px  #111 );*/
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, .4))
+}
+
+
+@media (max-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (max-width: 480px) {
+    /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (max-width: 600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (max-width: 801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (max-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (max-width: 1281px) {
+    /* hi-res laptops and desktops */
+
+    .contacts-main {
+        margin-top: 5vh;
+    }
 }
