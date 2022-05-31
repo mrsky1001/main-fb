@@ -238,14 +238,34 @@
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
-@media (max-width: 1025px) {
+@media (min-width: 801px) and (max-width: 1025px) {
     /* big landscape tablets, laptops, and desktops */
-}
-
-@media (max-width: 1281px) {
-    /* hi-res laptops and desktops */
+    .contacts-page {
+        height: 109vh;
+        justify-content: center;
+    }
 
     .contacts-main {
+        height: 70vh;
+    }
+
+    .fomka-img__bottom {
+        top: 346vh;
+    }
+
+    .contacts-actions__wrapper {
+        grid-column: 11/20;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1281px) {
+    /* hi-res laptops and desktops */
+    .contacts-main {
         margin-top: 5vh;
+    }
+
+    .fomka-img__bottom {
+        top: 343vh;
     }
 }

@@ -89,11 +89,26 @@
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
-@media (max-width: 1025px) {
+@media (min-width: 801px) and (max-width: 1025px) {
     /* big landscape tablets, laptops, and desktops */
+    .about-page {
+        height: 71vh;
+    }
+
+    .about-bg {
+        height: 100vh;
+        top: 77vh;
+    }
 }
 
-@media (max-width: 1281px) {
+@media (min-width: 1025px) and (max-width: 1281px) {
     /* hi-res laptops and desktops */
+    .about-bg{
+        height: 112vh;
+        top: 70vh;
+    }
 
+    .about-page{
+        height: 71vh;
+    }
 }

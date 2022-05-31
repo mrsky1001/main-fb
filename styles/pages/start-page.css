@@ -133,11 +133,14 @@
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 
-@media (max-width: 1025px) {
+@media (min-width: 801px) and (max-width: 1025px) {
     /* big landscape tablets, laptops, and desktops */
+    .fomka-img {
+        background-position: top 0 right -50vw;
+    }
 }
 
-@media (max-width: 1281px) {
+@media (min-width: 1025px) and (max-width: 1281px) {
     /* hi-res laptops and desktops */
     .fomka-img {
         background-position: top 0 right -50vw;
