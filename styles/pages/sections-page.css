@@ -287,46 +287,17 @@
 }
 
 
-@media (max-width: 320px) {
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
 }
 
-@media (max-width: 480px) {
-    /* smartphones, Android phones, landscape iPhone */
-}
-
-@media (max-width: 600px) {
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-
-@media (max-width: 801px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (max-width: 1026px) {
-    /* big landscape tablets, laptops, and desktops */
-    .sections-page {
-        margin: 20vh 0 0 0;
-    }
-
-    .sections-names__bg {
-        left: -475px;
-        top: 202vh;
-    }
-
-    .section-page__names-container {
-        grid-row: 1;
-    }
-
-    .sections-page__list-container {
-        grid-column: 10/12;
-        max-width: 716px;
-    }
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
 
 }
 
-@media (min-width: 1025px) and (max-width: 1281px) {
-    /* hi-res laptops and desktops */
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
     .sections-page {
         margin: 20vh 0 0 0;
     }
@@ -336,8 +307,8 @@
     }
 
     .sections-names__bg {
-        left: -475px;
-        top: 211vh;
+        left: -15vw;
+        top: 237vh;
     }
 
     .section-page__names-container {
@@ -346,6 +317,94 @@
 
     .sections-page__list-container {
         grid-column: 10/12;
-        max-width: 716px;
+        /*max-width: 716px;*/
     }
 }
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* For landscape layouts only */
+}
+
+/*@media (max-width: 801px) {*/
+/*    !* tablet, landscape iPad, lo-res laptops ands desktops *!*/
+/*    .sections-page__list-container {*/
+/*        max-width: 663px;*/
+/*    }*/
+
+/*    .section-list__main-block {*/
+/*        width: 302px;*/
+/*    }*/
+
+/*    .section-page__names-container {*/
+/*        min-width: 616px;*/
+/*    }*/
+
+/*    .section__title {*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    .sections-names__bg {*/
+/*        left: -452px;*/
+/*        top: 200vh;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (min-width: 1000px) and (max-width: 1025px) {*/
+/*    !* big landscape tablets, laptops, and desktops *!*/
+/*    .sections-page {*/
+/*        margin: 20vh 0 0 0;*/
+/*    }*/
+
+/*    .sections-names__bg {*/
+/*        left: -475px;*/
+/*        top: 202vh;*/
+/*    }*/
+
+/*    .section-page__names-container {*/
+/*        grid-row: 1;*/
+/*    }*/
+
+/*    .sections-page__list-container {*/
+/*        grid-column: 10/12;*/
+/*        max-width: 716px;*/
+/*    }*/
+
+/*}*/
+
+/*@media (min-width: 1025px) and (max-width: 1281px) {*/
+/*    !* hi-res laptops and desktops *!*/
+/*    .sections-page {*/
+/*        margin: 20vh 0 0 0;*/
+/*    }*/
+
+/*    .sections-names__bg {*/
+/*        min-width: 872px;*/
+/*    }*/
+
+/*    .sections-names__bg {*/
+/*        left: -475px;*/
+/*        top: 211vh;*/
+/*    }*/
+
+/*    .section-page__names-container {*/
+/*        grid-row: 1;*/
+/*    }*/
+
+/*    .sections-page__list-container {*/
+/*        grid-column: 10/12;*/
+/*        max-width: 716px;*/
+/*    }*/
+/*}*/

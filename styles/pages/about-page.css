@@ -12,6 +12,7 @@
     justify-content: center;
     line-height: 26px;
     align-items: center;
+    width: 100%;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -73,42 +74,71 @@
 }
 
 
-@media (max-width: 320px) {
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
 }
 
-@media (max-width: 480px) {
-    /* smartphones, Android phones, landscape iPhone */
-}
-
-@media (max-width: 600px) {
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-
-@media (max-width: 801px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width: 801px) and (max-width: 1025px) {
-    /* big landscape tablets, laptops, and desktops */
-    .about-page {
-        height: 71vh;
-    }
-
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
     .about-bg {
-        height: 100vh;
-        top: 77vh;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1281px) {
-    /* hi-res laptops and desktops */
-    .about-bg{
         height: 112vh;
         top: 70vh;
     }
 
-    .about-page{
-        height: 71vh;
+    .about-page {
+        height: 77vh;
     }
 }
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+    .about-bg {
+        height: 145vh;
+        top: 63vh;
+    }
+
+    .about-page {
+        height: 93vh;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* For landscape layouts only */
+}
+
+/*@media (min-width: 801px) and (max-width: 1025px) {*/
+/*    !* big landscape tablets, laptops, and desktops *!*/
+/*    .about-page {*/
+/*        height: 71vh;*/
+/*    }*/
+
+/*    .about-bg {*/
+/*        height: 100vh;*/
+/*        top: 77vh;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1025px) and (max-width: 1281px) {*/
+/*    !* hi-res laptops and desktops *!*/
+/*    .about-bg{*/
+/*        height: 112vh;*/
+/*        top: 70vh;*/
+/*    }*/
+
+/*    .about-page{*/
+/*        height: 71vh;*/
+/*    }*/
+/*}*/
