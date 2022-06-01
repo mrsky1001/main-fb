@@ -287,82 +287,36 @@
 }
 
 
-@media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-}
-
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-
-}
-
-@media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
+/*
+2. 1366px768, 3. 1536x864, 4.1440x900
+ */
+@media (min-width: 1281px) and (max-width: 1599px) {
     .sections-page {
-        margin: 20vh 0 0 0;
-    }
-
-    .sections-names__bg {
-        min-width: 872px;
-    }
-
-    .sections-names__bg {
-        left: -15vw;
-        top: 237vh;
-    }
-
-    .section-page__names-container {
-        grid-row: 1;
+        height: 114vh;
     }
 
     .sections-page__list-container {
-        grid-column: 10/12;
-        /*max-width: 716px;*/
+        max-width: 68vw;
+    }
+
+    .sections-names__bg {
+        left: -433px;
+        top: 216vh;
     }
 }
 
-@media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
+/*
+3. 1536x864
+ */
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .sections-names__bg {
+        top: 223vh;
+        left: -453px;
+    }
 }
 
-@media only screen and (device-width: 768px) {
-    /* default iPad screens */
-}
 
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-    /* For portrait layouts only */
-}
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* For landscape layouts only */
-}
-
-/*@media (max-width: 801px) {*/
-/*    !* tablet, landscape iPad, lo-res laptops ands desktops *!*/
-/*    .sections-page__list-container {*/
-/*        max-width: 663px;*/
-/*    }*/
-
-/*    .section-list__main-block {*/
-/*        width: 302px;*/
-/*    }*/
-
-/*    .section-page__names-container {*/
-/*        min-width: 616px;*/
-/*    }*/
-
-/*    .section__title {*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    .sections-names__bg {*/
-/*        left: -452px;*/
-/*        top: 200vh;*/
-/*    }*/
-/*}*/
-
-/*@media only screen and (min-width: 1000px) and (max-width: 1025px) {*/
+/*@media (max-width: 1026px) {*/
 /*    !* big landscape tablets, laptops, and desktops *!*/
 /*    .sections-page {*/
 /*        margin: 20vh 0 0 0;*/
@@ -408,3 +362,5 @@
 /*        max-width: 716px;*/
 /*    }*/
 /*}*/
+
+
