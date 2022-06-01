@@ -1,16 +1,16 @@
-/*
- * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 16:01
- */
+/*!**/
+/* * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  27.05.2022, 16:01*/
+/* *!*/
 
 
-@media screen and (max-width: 400px) {
-    .section-list__main-block {
-        width: 100px;
-    }
-}
+/*@media screen and (max-width: 400px) {*/
+/*    .section-list__main-block {*/
+/*        width: 100px;*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 750px) {
-    .about-page__authors {
-        justify-content: center;
-    }
-}
+/*@media screen and (max-width: 750px) {*/
+/*    .about-page__authors {*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/

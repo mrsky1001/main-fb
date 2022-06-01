@@ -238,7 +238,15 @@
     }
 }
 
+/**
+    5. 360x640
+ */
 
+@media (max-width: 361px) {
+    .product-bg {
+        top: 475vh;
+    }
+}
 
 
 /*@media (min-width: 801px) and (max-width: 1025px) {*/

@@ -316,6 +316,58 @@
 }
 
 
+/**
+    5. 360x640
+ */
+
+@media (max-width: 361px) {
+    .sections-page {
+        color: #3d3d3d;
+        top: 65px;
+        height: 112vh;
+        letter-spacing: 1px;
+        flex-wrap: wrap;
+        grid-column: 1 / 12;
+        place-content: initial;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+    .sections-page__main {
+        display: flex;
+        align-items: center;
+    }
+
+    .sections-page__list{
+        padding: 0;
+    }
+
+    .section-page__names-container {
+        display: none;
+    }
+
+    .sections-page__list-container {
+        /*max-width: none;*/
+    }
+
+    .section-list__main-block{
+    }
+
+    .section-list__block{
+        margin-bottom: 80px;
+    }
+
+    .section__title {
+        width: 100%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
 /*@media (max-width: 1026px) {*/
 /*    !* big landscape tablets, laptops, and desktops *!*/
 /*    .sections-page {*/

@@ -96,13 +96,17 @@
 
 @media (max-width: 361px) {
     .about-page {
-        height: 128vh;
+        height: 151vh;
     }
 
     .about-bg {
         height: 194vh;
         top: 51vh;
         left: 0;
+    }
+
+    .about-page__authors {
+        justify-content: center;
     }
 
     .about-page__text {
