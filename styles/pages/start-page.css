@@ -105,13 +105,12 @@
     width: 100vw;
     height: 149vh;
     z-index: -1;
-
     /*transform: scale(1.5);*/
     position: absolute;
     background-image: url(../../images/fomka__small.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top 0 right -32vw;
+    background-position: top 0 right -35vw;
     /*-webkit-filter: drop-shadow(0px 4px 4px  #111 );*/
     filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, .4))
 }

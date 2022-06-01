@@ -273,12 +273,12 @@
 .sections-names__bg {
     z-index: -1;
     width: 53%;
-    height: 562px;
+    height: 558px;
     /*left: -595px;*/
     left: -473px;
-    top: 243vh;
-    min-width: 705px;
-    min-height: 560px;
+    top: 226vh;
+    /* min-width: 705px; */
+    /* min-height: 560px; */
     position: absolute;
     background-image: url(../../images/bg/palet-bg__gray.png);
     background-size: contain;

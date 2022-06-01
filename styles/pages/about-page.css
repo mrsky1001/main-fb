@@ -6,7 +6,7 @@
 .about-page {
     grid-column: 1/12;
     color: white;
-    height: 120vh;
+    height: 102vh;
     /*display: grid;*/
     display: flex;
     justify-content: center;

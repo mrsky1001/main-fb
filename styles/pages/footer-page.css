@@ -56,7 +56,7 @@
     width: 101%;
     /* left: -20px; */
     margin-left: -19px;
-    height: 336px;
+    height: 399px;
     display: grid;
     color: white;
     letter-spacing: 1.2px;
@@ -67,7 +67,7 @@
     background-repeat: no-repeat;
     background-position: top;
     align-items: end;
-    padding: 0 0 147px 0;
+    padding: 0 0 44px 0;
 }
 
 .footer__item {
