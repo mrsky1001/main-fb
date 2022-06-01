@@ -226,8 +226,7 @@
 /*    animation: filter-in .5s ease-out;*/
 /*}*/
 
-.section-list__img:hover {
-
+.section-list__img:hover, .section-list__img_hover {
     cursor: pointer;
     /*animation: filter-in 5s ease-out;*/
     filter: saturate(1) contrast(1);

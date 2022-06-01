@@ -22,6 +22,34 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.about-page__authors'))
 
 
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        console.log('start')
+        const square = entry.target.querySelector('.section-list__img')
+        console.log(square)
+        console.log(square.classList)
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                square.classList.add('section-list__img_hover')
+                return // if we added the class, exit the function
+            }, 200)
+        }
+        console.log('exit')
+
+        // We're not intersecting, so remove the class!
+        square.classList.remove('section-list__img_hover')
+    })
+}, {rootMargin: '-130px', threshold: .2})
+
+if (window.innerWidth < 800) {
+    observer2.observe(document.getElementById('storeSection'))
+    observer2.observe(document.getElementById('devSection'))
+    observer2.observe(document.getElementById('designSection'))
+    observer2.observe(document.getElementById('tripSection'))
+    observer2.observe(document.getElementById('homeSection'))
+    observer2.observe(document.getElementById('photoSection'))
+}
+
 const sections = ['store', 'dev', 'design', 'trip', 'home', 'photo']
 
 sections.forEach(s => {
@@ -105,81 +133,81 @@ header.addEventListener('mouseleave', (e) => {
         headerList.classList.remove('header-list__hover')
     }, 1000)
 })
-
-
-const center = document.getElementsByClassName('products-slider__center-img')[0]
-const centerDescription = document.getElementsByClassName('products-slider__center-description')[0]
-const after = document.getElementsByClassName('products-slider__right-img')[0]
-const before = document.getElementsByClassName('products-slider__left-img')[0]
-
-const selectProduct = (p, i) => {
-    const productName = document.getElementById(p.name + 'ProductName')
-    const beforeText = i === 0 ? products[products.length - 1].name : products[i - 1].name
-    const afterText = i === products.length - 1 ? products[0].name : products[i + 1].name
-
-    before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')"
-    center.style.backgroundImage = "url('../images/products/" + p.name + ".png')"
-    center.style.transform = ('scale(' + p.scale + ')')
-    centerDescription.innerHTML = p.rusDescription
-    center.classList.add('products-slider__show-animate')
-
-    const pName = document.getElementsByClassName('product-name__selected')[0]
-    pName.classList.remove('product-name__selected')
-
-    setTimeout(() => {
-        center.classList.remove('products-slider__show-animate')
-    }, 800)
-
-    productName.classList.add('product-name__selected')
-
-    after.style.backgroundImage = "url('../images/products/" + afterText + ".png')"
-}
-
-const onClickAfterBeforeSlider = (isAfter = false) => {
-    const selectedText = document.getElementsByClassName('product-name__selected')[0]
-    const selectedProduct = products.find(p => selectedText.id === p.name + 'ProductName')
-    const selectedProductIdx = products.indexOf(selectedProduct)
-
-    let product = ''
-    let productIdx = 0
-
-    const increase = isAfter ? 1 : -1
-
-    if (selectedProductIdx === 0 && !isAfter) {
-        product = products[products.length - 1]
-        productIdx = products.length - 1
-    } else if (selectedProductIdx === products.length - 1 && isAfter) {
-        product = products[0]
-        productIdx = 0
-    } else {
-        product = products[selectedProductIdx + increase]
-        productIdx = selectedProductIdx + increase
-    }
-
-    selectProduct(product, productIdx)
-}
-
-after.addEventListener('click', () => onClickAfterBeforeSlider(true))
-before.addEventListener('click', () => onClickAfterBeforeSlider(false))
-const productListEl = document.getElementsByClassName('products-names__list')[0]
-
-products.forEach((p, i) => {
-    const selectedClass = i === 1 ? ' product-name__selected' : ''
-
-    productListEl.innerHTML += '<li id="' + p.name + 'Product" class="product-names__label ">' +
-        ' <div id="' + p.name + 'ProductName" class="product-names__text' + selectedClass + '">' + p.rusName + '</div>' +
-        ' </li>'
-})
-
-products.forEach((p, i) => {
-    const product = document.getElementById(p.name + 'ProductName')
-    product.addEventListener('click', () => {
-        selectProduct(p, i)
-    })
-})
-
-before.style.backgroundImage = "url('../images/products/" + products[0].name + ".png')"
-center.style.backgroundImage = "url('../images/products/" + products[1].name + ".png')"
-center.style.transform = ('scale(' + products[1].scale + ')')
-centerDescription.innerHTML = products[1].rusDescription
-after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')"
+//
+//
+// const center = document.getElementsByClassName('products-slider__center-img')[0]
+// const centerDescription = document.getElementsByClassName('products-slider__center-description')[0]
+// const after = document.getElementsByClassName('products-slider__right-img')[0]
+// const before = document.getElementsByClassName('products-slider__left-img')[0]
+//
+// const selectProduct = (p, i) => {
+//     const productName = document.getElementById(p.name + 'ProductName')
+//     const beforeText = i === 0 ? products[products.length - 1].name : products[i - 1].name
+//     const afterText = i === products.length - 1 ? products[0].name : products[i + 1].name
+//
+//     before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')"
+//     center.style.backgroundImage = "url('../images/products/" + p.name + ".png')"
+//     center.style.transform = ('scale(' + p.scale + ')')
+//     centerDescription.innerHTML = p.rusDescription
+//     center.classList.add('products-slider__show-animate')
+//
+//     const pName = document.getElementsByClassName('product-name__selected')[0]
+//     pName.classList.remove('product-name__selected')
+//
+//     setTimeout(() => {
+//         center.classList.remove('products-slider__show-animate')
+//     }, 800)
+//
+//     productName.classList.add('product-name__selected')
+//
+//     after.style.backgroundImage = "url('../images/products/" + afterText + ".png')"
+// }
+//
+// const onClickAfterBeforeSlider = (isAfter = false) => {
+//     const selectedText = document.getElementsByClassName('product-name__selected')[0]
+//     const selectedProduct = products.find(p => selectedText.id === p.name + 'ProductName')
+//     const selectedProductIdx = products.indexOf(selectedProduct)
+//
+//     let product = ''
+//     let productIdx = 0
+//
+//     const increase = isAfter ? 1 : -1
+//
+//     if (selectedProductIdx === 0 && !isAfter) {
+//         product = products[products.length - 1]
+//         productIdx = products.length - 1
+//     } else if (selectedProductIdx === products.length - 1 && isAfter) {
+//         product = products[0]
+//         productIdx = 0
+//     } else {
+//         product = products[selectedProductIdx + increase]
+//         productIdx = selectedProductIdx + increase
+//     }
+//
+//     selectProduct(product, productIdx)
+// }
+//
+// after.addEventListener('click', () => onClickAfterBeforeSlider(true))
+// before.addEventListener('click', () => onClickAfterBeforeSlider(false))
+// const productListEl = document.getElementsByClassName('products-names__list')[0]
+//
+// products.forEach((p, i) => {
+//     const selectedClass = i === 1 ? ' product-name__selected' : ''
+//
+//     productListEl.innerHTML += '<li id="' + p.name + 'Product" class="product-names__label ">' +
+//         ' <div id="' + p.name + 'ProductName" class="product-names__text' + selectedClass + '">' + p.rusName + '</div>' +
+//         ' </li>'
+// })
+//
+// products.forEach((p, i) => {
+//     const product = document.getElementById(p.name + 'ProductName')
+//     product.addEventListener('click', () => {
+//         selectProduct(p, i)
+//     })
+// })
+//
+// before.style.backgroundImage = "url('../images/products/" + products[0].name + ".png')"
+// center.style.backgroundImage = "url('../images/products/" + products[1].name + ".png')"
+// center.style.transform = ('scale(' + products[1].scale + ')')
+// centerDescription.innerHTML = products[1].rusDescription
+// after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')"

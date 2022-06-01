@@ -261,5 +261,14 @@
         height: 70vh;
 
     }
+
+
 }
+
+@media (max-width: 361px) {
+    .fomka-img__bottom {
+        top: 667vh;
+    }
+}
+
 
