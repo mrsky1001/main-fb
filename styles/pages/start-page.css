@@ -86,7 +86,7 @@
     height: 550px;
     left: -100px;
     z-index: -1;
-    background-image: url(../../images/bg/palet-bg__gray.png);
+    background-image: url(../../images/bg/palet-bg--gray.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -107,7 +107,7 @@
     z-index: -1;
     /*transform: scale(1.5);*/
     position: absolute;
-    background-image: url(../../images/fomka__small.svg);
+    background-image: url(../../images/fomka--small.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top 0 right -35vw;
@@ -116,7 +116,46 @@
 }
 
 
+/**
+    5. 360x640
+ */
 
+@media (max-width: 361px) {
+
+    .start-page {
+        height: 83vh;
+    }
+
+    .start-page__header {
+        max-width: 68vw;
+        max-height: 20vh;
+    }
+
+    .header__img {
+        position: absolute;
+        top: -60vh;
+        min-width: 75vw;
+        height: 550px;
+        left: 0;
+    }
+
+    .fomka-img {
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+        background-position: top 32vh right -59vw;
+    }
+
+    .start-page__logo > * {
+        font-size: 12vw;
+    }
+
+    .start-page__logo {
+        margin-top: 6vh;
+    }
+}
 
 
 /*@media (min-width: 801px) and (max-width: 1025px) {*/

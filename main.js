@@ -2,6 +2,7 @@
  * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  23.05.2022, 13:57
  */
 
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const square = entry.target.querySelector('.authors__img')

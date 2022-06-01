@@ -62,7 +62,7 @@
     letter-spacing: 1.2px;
     /* position: absolute; */
     /* padding: 0 60px 20px 60px; */
-    background-image: url(../../images/bg/wave-bg__gray.png);
+    background-image: url(../../images/bg/wave-bg--gray.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -81,7 +81,7 @@
     height: 200px;
     width: 200px;
     margin: 0 0 16px 105px;
-    background-image: url(../../images/fomka__small.svg);
+    background-image: url(../../images/fomka--small.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;

@@ -27,7 +27,7 @@
 .about-page__authors {
     width: 35vw;
     height: 40vh;
-    min-width: 346px;
+    min-width: 249px;
     display: flex;
     /*justify-content: center;*/
     /*grid-row: 1/1;*/
@@ -65,7 +65,7 @@
     left: 0;
     top: 72vh;
     position: absolute;
-    background-image: url(../../images/bg/wave-bg__gray.png);
+    background-image: url(../../images/bg/wave-bg--gray.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,6 +89,31 @@
 }
 
 
+/**
+    5. 360x640
+ */
+
+
+@media (max-width: 361px) {
+    .about-page {
+        height: 128vh;
+    }
+
+    .about-bg {
+        height: 194vh;
+        top: 51vh;
+        left: 0;
+    }
+
+    .about-page__text {
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: small;
+    }
+}
 
 
 /*@media (min-width: 801px) and (max-width: 1025px) {*/
@@ -102,6 +127,7 @@
 /*        top: 77vh;*/
 /*    }*/
 /*}*/
+
 
 /*@media (min-width: 1025px) and (max-width: 1281px) {*/
 /*    !* hi-res laptops and desktops *!*/

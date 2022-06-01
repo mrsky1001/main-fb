@@ -105,7 +105,7 @@
     /* min-width: 494px; */
     /* min-height: 560px; */
     position: absolute;
-    background-image: url(../../images/bg/palet-bg__white-stretch.png);
+    background-image: url(../../images/bg/palet-bg--white-stretch.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -197,7 +197,7 @@
     min-width: 705px;
     min-height: 560px;
     position: absolute;
-    background-image: url(../../images/bg/palet-bg__gray.png);
+    background-image: url(../../images/bg/palet-bg--gray.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,7 +211,7 @@
     left: 0;
     top: 300vh;
     position: absolute;
-    background-image: url(../../images/bg/wave-bg__gray.png);
+    background-image: url(../../images/bg/wave-bg--gray.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

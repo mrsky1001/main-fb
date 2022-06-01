@@ -192,7 +192,7 @@
     letter-spacing: 0.5px;
     font-weight: 500;
     /* filter: hue-rotate(288deg); */
-    background-image: url(../../images/bg/palet-bg__gray-stretch.png);
+    background-image: url(../../images/bg/palet-bg--gray-stretch.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -212,7 +212,7 @@
     /*transform: scale(1.5);*/
     /* opacity: 0.3; */
     position: absolute;
-    background-image: url(../../images/fomka__small.svg);
+    background-image: url(../../images/fomka--small.svg);
     background-size: 119vw 114vh;
     background-repeat: no-repeat;
     background-position: top -23vw right -45vw;
