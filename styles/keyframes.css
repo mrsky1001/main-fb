@@ -3,8 +3,6 @@
  */
 
 
-
-
 @keyframes satur-blur-filter-out {
     0% {
         filter: saturate(0) blur(1px);
@@ -40,11 +38,9 @@
 @keyframes opacity-filter-hide {
     0% {
         opacity: 1;
-
     }
     100% {
         opacity: 0;
-
     }
 }
 
@@ -96,6 +92,29 @@
         filter: saturate(1) contrast(1);
     }
     100% {
+        filter: saturate(0) contrast(0.9);
+    }
+
+}
+
+@keyframes products-filter-in {
+    0% {
+        transform: scale(1);
+        filter: saturate(0) contrast(0.9);
+    }
+    100% {
+        transform: scale(1.5);
+        filter: saturate(1) contrast(1);
+    }
+}
+
+@keyframes products-filter-out {
+    0% {
+        transform: scale(1.5);
+        filter: saturate(1) contrast(1);
+    }
+    100% {
+        transform: scale(1);
         filter: saturate(0) contrast(0.9);
     }
 

@@ -99,6 +99,12 @@ sections.forEach(s => {
 
 })
 
+const clearProductsScale = () => {
+    products.forEach((p, i) => {
+        const productEl2 = document.getElementById(p.name + 'Product')
+        productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
+    })
+}
 
 document.addEventListener('click', (e) => {
 
@@ -114,6 +120,18 @@ document.addEventListener('click', (e) => {
             section?.classList.remove('section-list__img-gray')
         }
     })
+
+    const listProducts = document.getElementsByClassName('products-page__list')[0]
+
+    if (!listProducts.contains(e.target)) {
+        console.log(e.target)
+        products.forEach((p, i) => {
+
+            const productEl2 = document.getElementById(p.name + 'Product')
+            productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
+        })
+    }
+
 
 })
 
@@ -253,12 +271,27 @@ if (window.innerWidth > 800) {
             '                        </li>')
     })
 
+
+    // const clickProduct = (productEl) => {
+    //     console.log('++',productEl)
+    //     products.forEach((p, i) => {
+    //         const productEl2 = document.getElementById(p.name + 'Product')
+    //         productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
+    //     })
+    //
+    //     productEl.querySelector('.product-list__main-block').style.transform = ('scale(1.5)')
+    // }
+
     setTimeout(() => {
         products.forEach((p, i) => {
-            console.log(document.getElementById(p.name + 'Product'))
-            observer3.observe(document.getElementById(p.name + 'Product'))
+            const productEl = document.getElementById(p.name + 'Product')
+            observer3.observe(productEl)
+
+            // productEl.addEventListener('click', () => clickProduct(productEl))
         })
     }, 1000)
+
+
 }
 
 
