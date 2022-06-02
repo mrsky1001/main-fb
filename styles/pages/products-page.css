@@ -242,7 +242,7 @@
     5. 360x640
  */
 
-@media (max-width: 361px) {
+@media (max-width: 400px)   {
     .product-bg {
         top: 2958px;
         height: 2136px;

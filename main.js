@@ -43,7 +43,7 @@ const observer2 = new IntersectionObserver(entries => {
     })
 }, {rootMargin: '-130px', threshold: .4})
 
-if (window.innerWidth < 800) {
+if (window.innerWidth < 801) {
     observer2.observe(document.getElementById('storeSection'))
     observer2.observe(document.getElementById('devSection'))
     observer2.observe(document.getElementById('designSection'))
@@ -158,7 +158,7 @@ header.addEventListener('mouseleave', (e) => {
 })
 //
 
-if (window.innerWidth > 800) {
+if (window.innerWidth > 801) {
     const center = document.getElementsByClassName('products-slider__center-img')[0]
     const centerDescription = document.getElementsByClassName('products-slider__center-description')[0]
     const after = document.getElementsByClassName('products-slider__right-img')[0]

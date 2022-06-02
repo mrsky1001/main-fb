@@ -94,7 +94,7 @@
  */
 
 
-@media (max-width: 361px) {
+@media (max-width: 400px)   {
     .about-page {
         height: 912px;
     }
