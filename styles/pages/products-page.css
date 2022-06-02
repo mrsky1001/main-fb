@@ -168,7 +168,7 @@
 
 .products-slider__show-animate {
     opacity: 1;
-    animation: image-filter 1s ease-out;
+    animation: opacity-filter-show 1s ease-out;
 }
 
 .products-slider__right-img {
@@ -245,6 +245,90 @@
 @media (max-width: 361px) {
     .product-bg {
         top: 475vh;
+        height: 321vh;
+    }
+
+    .products-page {
+        padding: 164px 0 0 0;
+        height: 194vh;
+        display: block;
+    }
+
+    .products-header {
+        margin: 0 0 120px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .product-header {
+        opacity: 0;
+        background-color: #3d3d3dd9;
+        border-radius: 6px;
+        padding: 5px;
+        transform: skewX(170deg);
+        animation: opacity-filter-hide 1s ease-in-out;
+    }
+
+    .product-header__hover {
+        opacity: 1;
+        animation: 1s opacity-filter-show ease-in-out;
+    }
+
+    .products-text__header {
+        padding-left: 0;
+    }
+
+    .products-names {
+        display: none
+    }
+
+    .products-slider {
+        display: none
+    }
+
+    .products-page__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-list__block {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 0 120px 0;
+        min-width: 216px;
+
+    }
+
+    .product-list__img {
+        min-width: 181px;
+        width: 100%;
+        height: 10vw;
+        margin-bottom: 20px;
+        min-height: 158px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        filter: saturate(0) contrast(0.9);
+        animation: filter-out .5s ease-out;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .product-list__img_hover {
+        cursor: pointer;
+        /*animation: filter-in 5s ease-out;*/
+        filter: saturate(1) contrast(1);
+        animation: filter-in .5s ease-out;
     }
 }
 
