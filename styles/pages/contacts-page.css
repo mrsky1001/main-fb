@@ -266,6 +266,37 @@
 }
 
 @media (max-width: 361px) {
+    .contacts-header {
+        margin: 52px 0 0;
+    }
+
+    .contacts-page {
+        padding-top: 50px 20px 0 0;
+    }
+
+    .contacts-select {
+        width: 116%;
+    }
+
+    .contacts-control {
+        width: auto;
+    }
+
+
+    .contacts-question__input {
+        width: 270px;
+    }
+
+    .contacts-main {
+        height: 125vh;
+        justify-content: center;
+    }
+
+    .contacts-actions__wrapper {
+        grid-area: 5 / 10 / auto / 20;
+        align-items: normal;
+    }
+
     .fomka-img__bottom {
         top: 667vh;
     }

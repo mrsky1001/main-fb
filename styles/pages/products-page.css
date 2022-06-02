@@ -245,17 +245,17 @@
 @media (max-width: 361px) {
     .product-bg {
         top: 475vh;
-        height: 321vh;
+        height: 340vh;
     }
 
     .products-page {
         padding: 164px 0 0 0;
-        height: 194vh;
+        height: 258vh;
         display: block;
     }
 
     .products-header {
-        margin: 0 0 120px 0;
+        margin: 64px 0 80px 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
