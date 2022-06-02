@@ -223,7 +223,7 @@
  */
 @media (min-width: 1281px) and (max-width: 1599px) {
     .product-bg {
-        height: 136vh;
+        height: 821px;
     }
 
     .products-header {
@@ -232,9 +232,9 @@
 
     .product-center__bg {
         width: 62vw;
-        height: 87vH;
+        height: 525px;
         left: 26vw;
-        top: 35vh;
+        top: 221px;
     }
 }
 
@@ -244,13 +244,12 @@
 
 @media (max-width: 361px) {
     .product-bg {
-        top: 475vh;
-        height: 340vh;
+        top: 2958px;
+        height: 2136px;
     }
 
     .products-page {
-        padding: 164px 0 0 0;
-        height: 258vh;
+        height: 1716px;
         display: block;
     }
 

@@ -309,7 +309,7 @@
  */
 @media (min-width: 1281px) and (max-width: 1599px) {
     .sections-page {
-        height: 114vh;
+        height: 19px;
     }
 
     .sections-page__list-container {
@@ -318,7 +318,7 @@
 
     .sections-names__bg {
         left: -433px;
-        top: 216vh;
+        top: 36px;
     }
 }
 
@@ -327,7 +327,7 @@
  */
 @media (min-width: 1440px) and (max-width: 1599px) {
     .sections-names__bg {
-        top: 223vh;
+        top: 37px;
         left: -453px;
     }
 }
@@ -340,8 +340,7 @@
 @media (max-width: 361px) {
     .sections-page {
         color: #3d3d3d;
-        top: 65px;
-        height: 262vh;
+        height: 1875px;
         letter-spacing: 1px;
         flex-wrap: wrap;
         grid-column: 1 / 12;
@@ -378,7 +377,7 @@
 
     .section__title {
         width: 100%;
-        margin-bottom: 5%;
+        margin-bottom: -100px;
         display: flex;
         align-items: center;
         justify-content: center;

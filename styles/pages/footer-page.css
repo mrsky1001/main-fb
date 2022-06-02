@@ -88,6 +88,29 @@
 }
 
 
+@media (max-width: 361px) {
+    .footer-bg {
+        padding: 251px 0 0 0;
+        height: 694px;
+        background-size: 2000px;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+align-items: center;
+    }
+
+    .footer-fomka {
+        margin: 0;
+        height: 40vw;
+        width: 32vw;
+    }
+
+    .footer-rights {
+        padding: 0 10vw 10vw 10vw;
+    }
+}
 
 /*@media (max-width: 1025px) {*/
 /*    !* big landscape tablets, laptops, and desktops *!*/
