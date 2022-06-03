@@ -232,3 +232,30 @@
         top: -420px;
     }
 }
+
+
+
+@keyframes move-down-for-middle1024 {
+    0% {
+        top: -520px;
+    }
+    50% {
+        top: -520px;
+    }
+    100% {
+        top: -390px;
+    }
+}
+
+@keyframes move-up-for-middle1024 {
+    0% {
+        top: -390px
+    }
+    50% {
+        top: -390px
+    }
+    100% {
+        top: -520px;
+    }
+}
+

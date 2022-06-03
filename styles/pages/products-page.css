@@ -355,6 +355,32 @@
     }
 }
 
+@media (min-width: 1001px)and (max-width: 1500px) {
+    .product-bg{
+        top: 2894px;
+    }
+
+    .product-center__bg{
+        transform: rotate(-71deg);
+        width: 68vw;
+        height: 645px;
+        top: 230px;
+        left: 30vw;
+
+    }
+
+    .products-slider__center-img{
+        height: 329px;
+
+    }
+
+    .products-slider__left, .products-slider__right{
+        display: none;
+    }
+
+
+}
+
 @media (min-width: 2000px) {
     .products-page {
         height: 1553px;

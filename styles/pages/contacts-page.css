@@ -311,6 +311,17 @@
     }
 }
 
+@media (min-width: 1001px)and (max-width: 1500px) {
+    .fomka-img__bottom{
+        top: 3759px;
+        height: 837px;
+    }
+
+    .contacts-actions__wrapper {
+        grid-area: 4 / 11 / auto / 20;
+    }
+}
+
 @media (min-width: 2000px) {
     .contacts-page {
         height: 1184px;

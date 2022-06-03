@@ -385,18 +385,31 @@
     }
 }
 
+@media (min-width: 1001px)and (max-width: 1500px) {
+    .sections-names__bg {
+        width: 67%;
+        height: 563px;
+        top: 2260px;
+        left: -461px;
+    }
+
+    .section-list__block {
+        font-size: smaller;
+    }
+}
+
 @media (min-width: 2000px) {
     .sections__title {
         font-size: 1.4em;
     }
 
     .sections-page {
-        height: 1428px;
+        height: 1385px;
     }
 
     .sections-names__bg {
         height: 758px;
-        top: 2977px;
+        top: 2360px;
         left: -629px;
     }
 
@@ -414,12 +427,12 @@
         max-width: 1640px;
     }
 
-    .section-list__main-block{
+    .section-list__main-block {
         width: 352px;
         font-size: 1.3em;
     }
 
-    .section__count-pages{
+    .section__count-pages {
         margin-bottom: 36px;
     }
 
