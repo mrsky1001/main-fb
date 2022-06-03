@@ -226,7 +226,7 @@
     }
 }
 
-@media (min-width: 1001px)and (max-width: 1500px) {
+@media (min-width: 1001px)and (max-width: 1300px) {
     .start-page {
         height: 723px;
     }
@@ -257,6 +257,13 @@
 
     .fomka-img {
         background-position: right -61vw top 0;
+    }
+
+}
+
+@media (min-width: 1280px)and (max-width: 1400px) {
+    .fomka-img {
+        background-position: right -50vw top 0;
     }
 
 }
