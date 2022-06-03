@@ -96,7 +96,7 @@
  */
 
 
-@media (max-width: 800px)    {
+@media (max-width: 800px) {
     .about-page {
         height: 941px;
         display: flex;
@@ -122,6 +122,25 @@
         align-items: center;
         flex-wrap: wrap;
         font-size: small;
+    }
+}
+
+@media (min-width: 2000px) {
+    .about-page{
+        height: 1415px;
+    }
+
+    .about-bg {
+        height: 1754px;
+        background-size: 2700px;
+        top: 842px;
+    }
+
+    .about-page__text {
+        max-width: 626px;
+        letter-spacing: 1px;
+        line-height: 42px;
+        font-size: 1.6em;
     }
 }
 

@@ -6,6 +6,7 @@
 .products-page {
     grid-column: 1/12;
     height: 1225px;
+
     position: relative;
     display: flex;
     color: white;
@@ -209,7 +210,7 @@
     width: 100%;
     height: 1456px;
     left: 0;
-    top: 2964px;
+    top: 3103px;
     position: absolute;
     background-image: url(../../images/bg/wave-bg--gray.png);
     background-size: cover;
@@ -351,5 +352,39 @@
         filter: saturate(1) contrast(1);
         transform: scale(1.5);
         animation: products-filter-in .5s ease-out;
+    }
+}
+
+@media (min-width: 2000px) {
+    .products-page {
+        height: 1553px;
+    }
+
+    .products-header, .products-names,.product-names__label, .product-name__selected{
+        font-size: 1.2em
+    }
+
+    .products-text__header {
+        padding-left: 12vw;
+    }
+
+    .product-bg {
+        height: 1754px;
+        background-size: 2700px;
+        top: 3799px;
+    }
+
+    .product-center__bg {
+        height: 917px;
+        top: 357px;
+        left: 29vw;
+    }
+
+    .product-names__label{
+        margin-bottom: 60px;
+    }
+
+    .products-slider__center, .products-slider__left, .products-slider__right {
+        transform: scale(1.3);
     }
 }

@@ -208,3 +208,27 @@
         top: -362px;
     }
 }
+
+@keyframes move-down-for-middle {
+    0% {
+        top: -420px;
+    }
+    50% {
+        top: -420px;
+    }
+    100% {
+        top: -390px;
+    }
+}
+
+@keyframes move-up-for-middle {
+    0% {
+        top: -390px
+    }
+    50% {
+        top: -390px
+    }
+    100% {
+        top: -420px;
+    }
+}
