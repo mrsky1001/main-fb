@@ -6,7 +6,7 @@
 .sections-page {
     grid-column: 1/12;
     color: #3D3D3D;
-    height: 98vh;
+    height: 1087px;
     /* display: grid; */
     position: relative;
     display: flex;
@@ -293,7 +293,7 @@
     height: 558px;
     /*left: -595px;*/
     left: -473px;
-    top: 226vh;
+    top: 2398px;
     /* min-width: 705px; */
     /* min-height: 560px; */
     position: absolute;
@@ -337,7 +337,7 @@
     5. 360x640
  */
 
-@media (max-width: 400px)   {
+@media (max-width: 600px)    {
     .sections-page {
         color: #3d3d3d;
         height: 1875px;
@@ -357,6 +357,8 @@
 
     .sections-page__list {
         padding: 0;
+
+        flex-direction: column;
     }
 
     .section-page__names-container {

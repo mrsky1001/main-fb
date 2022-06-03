@@ -5,7 +5,7 @@
 
 .products-page {
     grid-column: 1/12;
-    height: 145vh;
+    height: 1225px;
     position: relative;
     display: flex;
     color: white;
@@ -18,7 +18,6 @@
 
 .products-header {
     width: 100%;
-    margin: 156px 0 0 0;
 }
 
 .products-text__header {
@@ -31,7 +30,7 @@
     /* display: grid; */
     display: grid;
     width: 100%;
-    height: 80vh;
+    height: 750px;
 }
 
 .products-names {
@@ -97,10 +96,10 @@
 .product-center__bg {
     z-index: -1;
     width: 55vw;
-    height: 87vH;
+    height: 667px;
     /*left: -595px;*/
     left: 27vw;
-    top: 38vh;
+    top: 291px;
     filter: drop-shadow(2px 4px 6px black);
     /* min-width: 494px; */
     /* min-height: 560px; */
@@ -122,7 +121,7 @@
     z-index: 1;
     width: 8vw;
     filter: saturate(0) blur(1px);
-    height: 11vh;
+    height: 103px;
     /* filter: saturate(0); */
     /*background-image: url(../../images/products/wallet.png);*/
     background-size: contain;
@@ -139,7 +138,7 @@
 
 .products-slider__center-img {
     width: 25vw;
-    height: 48vh;
+    height: 450px;
     /*background-image: url(../../images/products/tShort.png);*/
     background-size: contain;
     background-repeat: no-repeat;
@@ -178,7 +177,7 @@
     background-position: center;
     width: 8vw;
     filter: saturate(0) blur(1px);
-    height: 11vh;
+    height: 103px;
     animation: satur-blur-filter-in 0.5s ease-in-out;
 }
 
@@ -193,7 +192,7 @@
     height: 562px;
     /*left: -595px;*/
     left: -500px;
-    top: 250vh;
+    top: 2345px;
     min-width: 705px;
     min-height: 560px;
     position: absolute;
@@ -209,7 +208,7 @@
     width: 100%;
     height: 1456px;
     left: 0;
-    top: 300vh;
+    top: 2964px;
     position: absolute;
     background-image: url(../../images/bg/wave-bg--gray.png);
     background-size: cover;
@@ -242,7 +241,7 @@
     5. 360x640
  */
 
-@media (max-width: 400px)   {
+@media (max-width: 600px)    {
     .product-bg {
         top: 2958px;
         height: 2136px;

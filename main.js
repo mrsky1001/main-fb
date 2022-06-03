@@ -99,12 +99,12 @@ sections.forEach(s => {
 
 })
 
-const clearProductsScale = () => {
-    products.forEach((p, i) => {
-        const productEl2 = document.getElementById(p.name + 'Product')
-        productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
-    })
-}
+// const clearProductsScale = () => {
+//     products.forEach((p, i) => {
+//         const productEl2 = document.getElementById(p.name + 'Product')
+//         productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
+//     })
+// }
 
 document.addEventListener('click', (e) => {
 
@@ -123,12 +123,15 @@ document.addEventListener('click', (e) => {
 
     const listProducts = document.getElementsByClassName('products-page__list')[0]
 
-    if (!listProducts.contains(e.target)) {
+    if (window.innerWidth < 801 && !listProducts.contains(e.target)) {
         console.log(e.target)
         products.forEach((p, i) => {
 
-            const productEl2 = document.getElementById(p.name + 'Product')
-            productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
+            const productEl2 = document.getElementById(p.name + 'Product').querySelector('.product-list__main-block')
+
+            if (productEl2) {
+                productEl2.style.transform = ('scale(1)')
+            }
         })
     }
 
@@ -158,7 +161,7 @@ header.addEventListener('mouseleave', (e) => {
 })
 //
 
-if (window.innerWidth > 801) {
+const callbackBiggerW800 = () => {
     const center = document.getElementsByClassName('products-slider__center-img')[0]
     const centerDescription = document.getElementsByClassName('products-slider__center-description')[0]
     const after = document.getElementsByClassName('products-slider__right-img')[0]
@@ -170,8 +173,8 @@ if (window.innerWidth > 801) {
         const beforeText = i === 0 ? products[products.length - 1].name : products[i - 1].name
         const afterText = i === products.length - 1 ? products[0].name : products[i + 1].name
 
-        before.style.backgroundImage = "url('../images/products/" + beforeText + ".png')"
-        center.style.backgroundImage = "url('../images/products/" + p.name + ".png')"
+        before.style.backgroundImage = "url('../products/" + beforeText + ".png')"
+        center.style.backgroundImage = "url('../products/" + p.name + ".png')"
         center.style.transform = ('scale(' + p.scale + ')')
         centerDescription.innerHTML = p.rusDescription
         center.classList.add('products-slider__show-animate')
@@ -185,7 +188,7 @@ if (window.innerWidth > 801) {
 
         productName.classList.add('product-name__selected')
 
-        after.style.backgroundImage = "url('../images/products/" + afterText + ".png')"
+        after.style.backgroundImage = "url('../products/" + afterText + ".png')"
     }
 
     const onClickAfterBeforeSlider = (isAfter = false) => {
@@ -231,14 +234,14 @@ if (window.innerWidth > 801) {
         })
     })
 
-    before.style.backgroundImage = "url('../images/products/" + products[0].name + ".png')"
-    center.style.backgroundImage = "url('../images/products/" + products[1].name + ".png')"
+    before.style.backgroundImage = "url('../products/" + products[0].name + ".png')"
+    center.style.backgroundImage = "url('../products/" + products[1].name + ".png')"
     center.style.transform = ('scale(' + products[1].scale + ')')
     centerDescription.innerHTML = products[1].rusDescription
-    after.style.backgroundImage = "url('../images/products/" + products[2].name + ".png')"
-} else {
+    after.style.backgroundImage = "url('../products/" + products[2].name + ".png')"
+}
 
-
+const callbackLowerW800 = () => {
     const observer3 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const listImg = entry.target.querySelector('.product-list__img')
@@ -252,8 +255,8 @@ if (window.innerWidth > 801) {
                 }, 200)
             }
 
-            productHeader.classList.remove('product-header__hover')
-            listImg.classList.remove('product-list__img_hover')
+            productHeader?.classList.remove('product-header__hover')
+            listImg?.classList.remove('product-list__img_hover')
         })
     }, {rootMargin: '-130px', threshold: .2})
 
@@ -272,15 +275,15 @@ if (window.innerWidth > 801) {
     })
 
 
-    // const clickProduct = (productEl) => {
-    //     console.log('++',productEl)
-    //     products.forEach((p, i) => {
-    //         const productEl2 = document.getElementById(p.name + 'Product')
-    //         productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
-    //     })
-    //
-    //     productEl.querySelector('.product-list__main-block').style.transform = ('scale(1.5)')
-    // }
+// const clickProduct = (productEl) => {
+//     console.log('++',productEl)
+//     products.forEach((p, i) => {
+//         const productEl2 = document.getElementById(p.name + 'Product')
+//         productEl2.querySelector('.product-list__main-block').style.transform = ('scale(1)')
+//     })
+//
+//     productEl.querySelector('.product-list__main-block').style.transform = ('scale(1.5)')
+// }
 
     setTimeout(() => {
         products.forEach((p, i) => {
@@ -289,9 +292,26 @@ if (window.innerWidth > 801) {
 
             // productEl.addEventListener('click', () => clickProduct(productEl))
         })
-    }, 1000)
-
-
+    }, 2000)
 }
 
+let lastWindowWidth = window.innerWidth
 
+if (window.innerWidth > 800) {
+    callbackBiggerW800()
+} else if (window.innerWidth < 801) {
+    callbackLowerW800()
+}
+
+window.addEventListener('resize', (e) => {
+    if (window.innerWidth > 800 && lastWindowWidth < 801) {
+        callbackBiggerW800()
+        const productList = document.getElementsByClassName('products-page__list-container')[0]
+        productList.style.display = 'none'
+    } else if (window.innerWidth < 801 && lastWindowWidth > 800) {
+        callbackLowerW800()
+
+    }
+
+    lastWindowWidth = window.innerWidth
+}, true);
