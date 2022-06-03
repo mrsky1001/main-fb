@@ -342,6 +342,11 @@
     .contacts-actions__wrapper {
         grid-area: 4 / 11 / auto / 20;
     }
+
+    .fomka-img__bottom{
+        background-position: right -60vw top -25vw;
+        background-size: 146vw 1254px;
+    }
 }
 
 

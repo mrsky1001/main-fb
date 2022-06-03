@@ -2,6 +2,10 @@
  * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  04.05.2022, 11:41
  */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     overflow-x: hidden;
@@ -10,3 +14,4 @@ body {
 .content-main {
     display: grid;
 }
+

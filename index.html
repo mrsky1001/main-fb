@@ -19,17 +19,16 @@
 </head>
 <body>
 <div class="content">
-    <section class="start-page">
+    <section id="startPage" class="start-page">
         <header class="start-page__header">
             <div class="header__container">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Главная</a>
-                        </li>
-                        <li class="header__item"><a href="#" class="header__link">Сервисы</a></li>
-                        <li class="header__item"><a href="#" class="header__link">О нас</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+                        <li class="header__item"><a href="#startPage" class="header__link">Главная</a></li>
+                        <li class="header__item"><a href="#aboutPage" class="header__link">О нас</a></li>
+                        <li class="header__item"><a href="#sectionsPage" class="header__link">Сервисы</a></li>
+                        <li class="header__item"><a href="#productsPage" class="header__link">Продукция</a></li>
+                        <li class="header__item"><a href="#contactsPage" class="header__link">Контакты</a></li>
                     </ul>
                     <div class="header__img"></div>
                 </nav>
@@ -48,7 +47,7 @@
     </section>
     <!--    <a href="#" class="content-logo"></a>-->
     <main class="content-main">
-        <section class="about-page">
+        <section id="aboutPage" class="about-page">
             <div class="about-page__authors">
                 <div class="authors__img">
                 </div>
@@ -68,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="sections-page">
+        <section id="sectionsPage" class="sections-page">
             <div class="sections__title"><h2>Разделы</h2></div>
             <div class="sections-page__main">
                 <div class="section-page__names-container">
@@ -222,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <section class="products-page">
+        <section id="productsPage" class="products-page">
             <div class="products-header">
                 <h2 class="products-text__header">
                     Наша продукция
@@ -259,7 +258,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts-page">
+        <section id="contactsPage" class="contacts-page">
             <div class="contacts-header">
                 <h2 class="contacts-text__header">
                     Связаться с нами
@@ -326,18 +325,18 @@
 
         <div class="footer-rights">2022 — © Все права защищены. Коляда Н.В. и Коляда А.А.
 
-            Копировать какие-либо материалы с ресурса запрещено. Делать это можно только с письменного разрешения правообладателя
+            Копировать какие-либо материалы с ресурса запрещено. Делать это можно только с письменного разрешения
+            правообладателя
             или со ссылкой на сайт-источник.
         </div>
         <div class="footer-nav__container">
             <nav class="footer__nav">
                 <ul class="footer__list">
-                    <li class="footer__item">
-                        <a href="#" class="footer__link">Главная</a>
-                    </li>
-                    <li class="footer__item"><a href="#" class="footer__link">Сервисы</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                    <li class="footer__item"><a href="#startPage" class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a href="#aboutPage" class="footer__link">О нас</a></li>
+                    <li class="footer__item"><a href="#sectionsPage" class="footer__link">Сервисы</a></li>
+                    <li class="footer__item"><a href="#productsPage" class="footer__link">Продукция</a></li>
+                    <li class="footer__item"><a href="#contactsPage" class="footer__link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -350,8 +349,12 @@
 <div class="sections-names__bg"></div>
 <div class="about-bg"></div>
 <div class="product-bg"></div>
-<script lang="js" src="list-products.js"></script>
-<script lang="js" src="main.js"></script>
+<script lang="js" src="scripts/list-products.js"></script>
+<script lang="js" src="scripts/start-page.js"></script>
+<script lang="js" src="scripts/sections-page.js"></script>
+<script lang="js" src="scripts/products-page.js"></script>
+<script lang="js" src="scripts/contacts-page.js"></script>
+<script lang="js" src="scripts/main.js"></script>
 </body>
 
 </html>
