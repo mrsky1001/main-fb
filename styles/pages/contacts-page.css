@@ -259,13 +259,17 @@
 2. 1366px768, 3. 1536x864, 4.1440x900
  */
 @media (min-width: 1281px) and (max-width: 1599px) {
-    .contacts-main {
-        height: 423px;
-
+    .contacts-page {
+        height: 731px;
     }
 
-
+    .fomka-img__bottom{
+        top: 3222px;
+    }
 }
+
+
+/*}*/
 
 @media (max-width: 600px)    {
     .contacts-header {

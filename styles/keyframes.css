@@ -176,3 +176,35 @@
         top: -520px;
     }
 }
+
+
+
+@keyframes move-down-for-small {
+    0% {
+        transform: rotate(0deg);
+        top: -362px;
+    }
+    50% {
+        transform: rotate(0deg);
+        top: -362px;
+    }
+    100% {
+        transform: rotate(-60deg);
+        top: -250px;
+    }
+}
+
+@keyframes move-up-for-small {
+    0% {
+        transform: rotate(-60deg);
+        top: -250px
+    }
+    50% {
+        transform: rotate(-60deg);
+        top: -250px
+    }
+    100% {
+        transform: rotate(0deg);
+        top: -362px;
+    }
+}

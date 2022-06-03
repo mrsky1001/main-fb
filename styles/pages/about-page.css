@@ -83,7 +83,7 @@
 
     .about-bg {
         width: 101%;
-        height: 773px;
+        height: 946px;
         left: -14px;
     }
 }
@@ -96,7 +96,7 @@
 
 @media (max-width: 600px)    {
     .about-page {
-        height: 912px;
+        height: 941px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -109,6 +109,7 @@
     }
 
     .about-page__authors {
+        height: 274px;
         justify-content: center;
     }
 

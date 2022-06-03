@@ -308,17 +308,13 @@
 2. 1366px768, 3. 1536x864, 4.1440x900
  */
 @media (min-width: 1281px) and (max-width: 1599px) {
-    .sections-page {
-        height: 19px;
-    }
-
     .sections-page__list-container {
         max-width: 68vw;
     }
 
     .sections-names__bg {
-        left: -433px;
-        top: 36px;
+        top: 1775px;
+        left: -412px;
     }
 }
 
@@ -328,7 +324,7 @@
 @media (min-width: 1440px) and (max-width: 1599px) {
     .sections-names__bg {
         top: 37px;
-        left: -453px;
+        left: -253px;
     }
 }
 
@@ -340,7 +336,7 @@
 @media (max-width: 600px)    {
     .sections-page {
         color: #3d3d3d;
-        height: 1875px;
+        height:1825px;
         letter-spacing: 1px;
         flex-wrap: wrap;
         grid-column: 1 / 12;

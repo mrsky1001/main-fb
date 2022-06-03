@@ -116,19 +116,46 @@
 }
 
 
+/*
+2. 1366px768, 3. 1536x864, 4.1440x900
+ */
+@media (min-width: 1281px) and (max-width: 1599px) {
+    .fomka-img {
+        left: 147px;
+    }
+
+}
+
+
 /**
     5. 360x640
  */
 
-@media (max-width: 600px)    {
+@media (max-width: 600px) {
 
     .start-page {
-        height:501px;
+        height: 501px;
     }
 
     .start-page__header {
         max-width: 68vw;
         max-height: 121px;
+    }
+
+    .header__nav {
+        margin-top: 20px;
+    }
+
+    .header__list{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__link{
+        font-size: 1.2em;
+        line-height: 29px;
     }
 
     .header__img {
@@ -137,6 +164,14 @@
         min-width: 75vw;
         height: 550px;
         left: 0;
+        transform: rotate(0deg);
+        animation: move-up-for-small 1s ease-out;
+    }
+
+    .header__img-hover {
+        transform: rotate(-60deg);
+        animation: move-down-for-small 1s ease-out;
+        top: -250px;
     }
 
     .fomka-img {

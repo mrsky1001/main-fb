@@ -153,6 +153,7 @@ header.addEventListener('mouseover', showHeader)
 
 
 header.addEventListener('mouseleave', (e) => {
+    console.log('sss')
     headerBgImg.classList.remove('header__img-hover')
     setTimeout(() => {
         const headerList = document.getElementsByClassName('header__list')[0]
@@ -245,7 +246,7 @@ const callbackLowerW800 = () => {
     const observer3 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const listImg = entry.target.querySelector('.product-list__img')
-            const productHeader = entry.target.querySelector('.product-header')
+            const productHeader = entry.target.querySelector('.product-header__container')
 
             if (entry.isIntersecting) {
                 setTimeout(() => {
@@ -268,8 +269,10 @@ const callbackLowerW800 = () => {
         productList.insertAdjacentHTML('beforeend', ' <li id="' + p.name + 'Product" class="product-list__block">\n' +
             '                            <div class="product-list__main-block">\n' +
             '                                <div class="product-list__img" style="background-image: url(./products/' + p.name + '.png)">\n' +
-            '                                    <h3 class="product-header">' + p.rusName + '</h3>\n' +
-            '                                </div>\n' +
+                                            ' <div class="product-header__container">\n'+
+            '                                    <h3 class="product-header">' + p.rusDescription + '</h3>\n' +
+            '                                    <p class="product-subheader">' + p.rusName + '</p>\n' +
+            '                               </div> </div>\n' +
             '                            </div>\n' +
             '                        </li>')
     })
