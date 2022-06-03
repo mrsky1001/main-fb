@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { isAuthorized } from '@/core/services/auth.services'
+import {isAuthorized} from '@/core/services/auth.services'
 import Vue from 'vue'
 import AppNavbar from '@/core/components/app/AppNavbar/AppNavbar.vue'
 import Component from 'vue-class-component'
@@ -108,7 +108,7 @@ $material-light: (
                 height: 0;
             }
 
-            font-size: 1.2em;
+            font-size: 1.4em;
             line-height: 25px;
 
             p {

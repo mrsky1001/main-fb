@@ -360,8 +360,17 @@
         height: 1553px;
     }
 
-    .products-header, .products-names,.product-names__label, .product-name__selected{
+    .products-header{
+        font-size: 1.4em
+    }
+
+    .products-names,.product-names__label{
         font-size: 1.2em
+
+    }
+
+    .product-name__selected{
+        font-size: 26px
     }
 
     .products-text__header {

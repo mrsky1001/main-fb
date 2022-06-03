@@ -73,7 +73,7 @@
 .section-names__label:hover {
     cursor: pointer;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: rgb(214 255 0);
 }
 
@@ -387,7 +387,7 @@
 
 @media (min-width: 2000px) {
     .sections__title {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     .sections-page {
@@ -397,11 +397,11 @@
     .sections-names__bg {
         height: 758px;
         top: 2977px;
-        left: -555px;
+        left: -629px;
     }
 
     .sections-names {
-        font-size: 1.6em;
+        font-size: 1.4em;
         padding: 0;
 
     }

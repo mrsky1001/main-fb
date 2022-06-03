@@ -88,7 +88,7 @@
 }
 
 
-@media (max-width: 800px)    {
+@media (max-width: 800px) {
     .footer-bg {
         padding: 251px 0 0 0;
         height: 694px;
@@ -98,7 +98,7 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-align-items: center;
+        align-items: center;
     }
 
     .footer-fomka {
@@ -110,6 +110,24 @@ align-items: center;
 
     .footer-rights {
         padding: 0 10vw 10vw 10vw;
+    }
+}
+
+@media (min-width: 2000px) {
+    .footer-bg {
+        height: 513px;
+    }
+
+    .footer__link {
+        font-size: 1.4em;
+    }
+
+    .footer-rights {
+        font-size: 1.1em;
+    }
+
+    .fomka-img__bottom {
+        top: 5334px;
     }
 }
 
