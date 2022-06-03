@@ -82,9 +82,11 @@
     }
 
     .about-bg {
-        width: 101%;
-        height: 946px;
-        left: -14px;
+        top: 591px;
+        /*width: 101%;*/
+        height: 1071px;
+        background-size: 1578px;
+        /*left: -14px;*/
     }
 }
 
@@ -94,7 +96,7 @@
  */
 
 
-@media (max-width: 600px)    {
+@media (max-width: 800px)    {
     .about-page {
         height: 941px;
         display: flex;

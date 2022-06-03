@@ -321,19 +321,19 @@
 /*
 3. 1536x864
  */
-@media (min-width: 1440px) and (max-width: 1599px) {
-    .sections-names__bg {
-        top: 37px;
-        left: -253px;
-    }
-}
+/*@media (min-width: 1440px) and (max-width: 1599px) {*/
+/*    .sections-names__bg {*/
+/*        top: 37px;*/
+/*        left: -253px;*/
+/*    }*/
+/*}*/
 
 
 /**
     5. 360x640
  */
 
-@media (max-width: 600px)    {
+@media (max-width: 800px)    {
     .sections-page {
         color: #3d3d3d;
         height:1825px;

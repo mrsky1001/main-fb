@@ -10,7 +10,7 @@
     display: flex;
     letter-spacing: 1px;
     height: 956px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
 }
@@ -271,7 +271,7 @@
 
 /*}*/
 
-@media (max-width: 600px)    {
+@media (max-width: 800px)    {
     .contacts-header {
         display: flex;
         justify-content: center;

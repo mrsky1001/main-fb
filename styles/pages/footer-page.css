@@ -53,7 +53,7 @@
 
 .footer-bg {
     z-index: -2;
-    width: 100%;
+    /*width: 100%;*/
     /* left: -20px; */
     margin-left: -19px;
     height: 399px;
@@ -88,7 +88,7 @@
 }
 
 
-@media (max-width: 600px)    {
+@media (max-width: 800px)    {
     .footer-bg {
         padding: 251px 0 0 0;
         height: 694px;
@@ -103,6 +103,7 @@ align-items: center;
 
     .footer-fomka {
         margin: 0;
+        max-height: 185px;
         height: 40vw;
         width: 32vw;
     }
