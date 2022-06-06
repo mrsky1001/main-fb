@@ -22,16 +22,24 @@
     width: 100%;
 }
 
-.start-page__logo {
+.start-page__logo-container {
     grid-column: 3/12;
+    margin: 19px 0;
+}
+
+.start-page__logo  {
     display: flex;
+}
+
+.start-page__version{
+display: flex;
+    justify-content: right;
 }
 
 .start-page__logo > * {
     font-family: viga;
     font-weight: 400;
     font-size: 8vw;
-    margin: 19px 0;
     background-color: #000;
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.25);

@@ -34,15 +34,20 @@
                 </nav>
             </div>
         </header>
-        <div class="start-page__logo">
-            <span class="logo-symbol ">F</span>
-            <span class="logo-symbol ">.</span>
-            <span class="logo-symbol ">O</span>
-            <span class="logo-symbol ">.</span>
-            <span class="logo-symbol ">M</span>
-            <span class="logo-symbol ">.</span>
-            <span class="logo-symbol ">A</span>
-            <span class="logo-symbol ">.</span>
+        <div class="start-page__logo-container">
+            <div class="start-page__logo">
+                <span class="logo-symbol ">F</span>
+                <span class="logo-symbol ">.</span>
+                <span class="logo-symbol ">O</span>
+                <span class="logo-symbol ">.</span>
+                <span class="logo-symbol ">M</span>
+                <span class="logo-symbol ">.</span>
+                <span class="logo-symbol ">A</span>
+                <span class="logo-symbol ">.</span>
+            </div>
+            <div class="start-page__version">
+                <span class="logo-version">1.0.1</span>
+            </div>
         </div>
     </section>
     <!--    <a href="#" class="content-logo"></a>-->
@@ -264,7 +269,8 @@
                     Связаться с нами
                 </h2>
             </div>
-            <form class="contacts-main" method="post" action="http://localhost:1234/api/email">
+            <form id="contactsForm" class="contacts-main" method="POST" action="http://localhost:1234/api/email"
+                  name="contactsForm">
                 <div class="contacts-name__wrapper contacts-control__wrapper">
 
                     <!--                    <div class="contacts-name__label">-->
@@ -273,7 +279,8 @@
                         <!--                        <div class="control-bg"></div>-->
                         <label class="contacts-control__label" for="contacts-name" minlength="3"
                                maxlength="30">Имя</label>
-                        <input id="contacts-name" class="contacts-control__input" type="text"
+                        <input id="contacts-name" name="name" form="contactsForm" class="contacts-control__input"
+                               type="text"
                                placeholder="Напишите своё имя..." required/>
                     </div>
                 </div>
@@ -281,7 +288,8 @@
                     <div class="contacts-control contacts-email__group">
                         <!--                        <div class="control-bg"></div>-->
                         <label class="contacts-control__label" for="contacts-email">E-mail</label>
-                        <input id="contacts-email" required class="contacts-control__input" minlength="6" maxlength="20"
+                        <input id="contacts-email" name="email" form="contactsForm" required
+                               class="contacts-control__input" minlength="6" maxlength="20"
                                type="email"
                                placeholder="Напишите свой e-mail..."/>
                     </div>
@@ -290,7 +298,8 @@
                     <div class="contacts-control contacts-theme__group">
                         <!--                        <div class="control-bg"></div>-->
                         <label class="contacts-control__label" for="contacts-theme">Тема</label>
-                        <select id="contacts-theme" required class="contacts-select contacts-control__input">
+                        <select id="contacts-theme" name="subject" form="contactsForm" required
+                                class="contacts-select contacts-control__input">
                             <option id="default" disabled value="default" selected>Чем мы можем вам помочь?</option>
                             <option id="buildWeb" value="buildWeb">Разработка веб-сайта</option>
                             <option id="design/brand" value="design/brand">Дизайн/брендинг</option>
@@ -304,7 +313,8 @@
                     <div class="contacts-question__input contacts-control">
                         <!--                        <div class="control-bg"></div>-->
                         <label class=" contacts-control__label" for="contacts-question">Вопрос</label>
-                        <textarea id="contacts-question" required class="contacts-textarea contacts-control__input"
+                        <textarea id="contacts-question" name="text" form="contactsForm" required
+                                  class="contacts-textarea contacts-control__input"
                                   minlength="10"
                                   maxlength="1000" rows="10"
                                   placeholder="Напишите нам вопрос, который вас заинтересовал..."></textarea>
