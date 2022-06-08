@@ -215,9 +215,9 @@
     /* opacity: 0.3; */
     position: absolute;
     background-image: url(../../images/fomka--small2.svg);
-    background-size: 119vw 1069px;
+    background-position: right -17vw top -22vw;
     background-repeat: no-repeat;
-    background-position: top -23vw right -45vw;
+    background-size: 52vw 1212px;
     /*-webkit-filter: drop-shadow(0px 4px 4px  #111 );*/
     filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, .4))
 }
@@ -313,8 +313,8 @@
 
 @media (min-width: 1001px)and (max-width: 1300px) {
     .fomka-img__bottom{
-        top: 3759px;
-        height: 837px;
+        background-position: right -17vw top -22vw;
+        background-size: 52vw 879px;
     }
 
     .contacts-actions__wrapper {
@@ -344,8 +344,8 @@
     }
 
     .fomka-img__bottom{
-        background-position: right -60vw top -25vw;
-        background-size: 146vw 1254px;
+        background-position: right -16vw top -29vw;
+        background-size: 45vw 1333px;
     }
 }
 
