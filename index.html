@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/pages/contacts-page.css"/>
     <link rel="stylesheet" href="styles/pages/footer-page.css"/>
     <!--    <link rel="icon" href="fb15.png">-->
+
 </head>
 <body>
 <div class="content">
@@ -285,7 +286,7 @@
                         <!--                        <div class="control-bg"></div>-->
                         <label class="contacts-control__label" for="contacts-email">E-mail</label>
                         <input id="contacts-email" name="email" form="contactsForm" required
-                               class="contacts-control__input" minlength="6" maxlength="20"
+                               class="contacts-control__input" minlength="6" maxlength="50"
                                type="email"
                                placeholder="Напишите свой e-mail..."/>
                     </div>
@@ -318,7 +319,8 @@
                 </div>
                 <div class="contacts-actions__wrapper">
                     <div class="contacts-actions">
-                        <button type="submit" class="contacts-actions__save-btn">Отправить</button>
+                        <button type="submit" class="contacts-actions__save-btn">Отправить
+                        </button>
                     </div>
                 </div>
             </form>
@@ -355,6 +357,7 @@
 <div class="sections-names__bg"></div>
 <div class="about-bg"></div>
 <div class="product-bg"></div>
+<script lang="js" src="scripts/email.js"></script>
 <script lang="js" src="scripts/list-products.js"></script>
 <script lang="js" src="scripts/start-page.js"></script>
 <script lang="js" src="scripts/sections-page.js"></script>
