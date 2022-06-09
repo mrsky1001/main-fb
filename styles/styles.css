@@ -2,7 +2,7 @@
  * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  04.05.2022, 11:41
  */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -13,5 +13,52 @@ body {
 
 .content-main {
     display: grid;
+}
+
+.info-msg-container {
+    width: 100%;
+    height: 100px;
+    color: #3d3d3d;
+    justify-content: center;
+    display: none;
+    position: fixed;
+    align-items: center;
+    background-color: #d6ff00;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.info-msg-container__show {
+    opacity: 1;
+    display: flex;
+    animation: info-msg-show 500ms;
+}
+
+.info-msg-container__hide {
+    opacity: 0;
+    animation: info-msg-hide 500ms;
+}
+
+@keyframes info-msg-show {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: flex;
+    }
+}
+
+@keyframes info-msg-hide {
+    0% {
+        opacity: 1;
+        display: flex;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }
 

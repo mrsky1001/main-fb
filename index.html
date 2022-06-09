@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/pages/contacts-page.css"/>
     <link rel="stylesheet" href="styles/pages/footer-page.css"/>
     <!--    <link rel="icon" href="fb15.png">-->
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <div class="content">
@@ -321,12 +321,18 @@
                     <div class="contacts-actions">
                         <button type="submit" class="contacts-actions__save-btn">Отправить
                         </button>
+                        <div
+                                id='recaptcha'
+                                class="g-recaptcha"
+                             data-sitekey="6LfM5vscAAAAABiWY0hQLyg4KLvvcf-1EAZRWdY2"
+                             data-callback="captchaSubmit"
+                             data-size="invisible">
+                        </div>
                     </div>
                 </div>
             </form>
         </section>
     </main>
-
 </div>
 <footer class="footer">
     <div class="footer-bg">
@@ -352,6 +358,10 @@
 
     </div>
 </footer>
+
+<div  id="infoMsgContainer" class="info-msg-container">
+    <div id="infoMsg" class="info-message">hello sad ad asd as </div>
+</div>
 <div class="fomka-img "></div>
 <div class="fomka-img__bottom "></div>
 <div class="sections-names__bg"></div>
