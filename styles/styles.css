@@ -40,6 +40,10 @@ body {
     animation: info-msg-hide 500ms;
 }
 
+.grecaptcha-badge, .g-recaptcha {
+    opacity: 0 !important;
+}
+
 @keyframes info-msg-show {
     0% {
         opacity: 0;

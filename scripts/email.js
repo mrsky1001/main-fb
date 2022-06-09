@@ -27,8 +27,8 @@ function captchaSubmit(token) {
         resetInfoOpacity()
     }
 
-    request.onerror = (err) => {
-        msgEl.innerText = err ?? 'Ошибка отправки заявки! Повторите попытку позже :)'
+    request.onerror = () => {
+        msgEl.innerText =  'Ошибка отправки заявки! Повторите попытку позже :)\n\n Или напишите нам на почту foma.blog@yandex.ru'
         msgContainerEl.classList.add('info-msg-container__show')
 
         resetInfoOpacity()
@@ -45,8 +45,8 @@ function captchaSubmit(token) {
 
 
 document.getElementById('contactsForm').addEventListener('submit', (e) => {
-    grecaptcha.execute().then().catch(err => {
-        msgEl.innerText = err ?? 'Ошибка отправки заявки! Повторите попытку позже :)'
+    grecaptcha.execute().then().catch(() => {
+        msgEl.innerText =  'Ошибка отправки заявки! Повторите попытку позже :) \n \n Или напишите нам на почту foma.blog@yandex.ru'
         msgContainerEl.classList.add('info-msg-container__show')
 
         resetInfoOpacity()
