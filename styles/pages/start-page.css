@@ -27,12 +27,12 @@
     margin: 19px 0;
 }
 
-.start-page__logo  {
+.start-page__logo {
     display: flex;
 }
 
-.start-page__version{
-display: flex;
+.start-page__version {
+    display: flex;
     justify-content: right;
 }
 
@@ -94,11 +94,12 @@ display: flex;
     height: 550px;
     left: -100px;
     z-index: -1;
+    filter: drop-shadow(2px 4px 6px black);
     background-image: url(../../images/bg/palet-bg--gray.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    animation: move-up 1s ease-out;
+    animation: move-up 1s ease-out, header-blik 10s infinite;
 }
 
 .header__img-hover {
@@ -289,5 +290,21 @@ display: flex;
 
     .fomka-img {
         height: 1751px;
+    }
+}
+
+
+@keyframes header-blik {
+    0% {
+        filter: invert(0) drop-shadow(2px 4px 6px black);
+    }
+    5% {
+        filter: invert(1);
+    }
+    10% {
+        filter: invert(0) drop-shadow(2px 4px 6px black);
+    }
+    100% {
+        filter: invert(0) drop-shadow(2px 4px 6px black);
     }
 }
