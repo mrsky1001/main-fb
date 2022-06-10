@@ -335,7 +335,7 @@
 
         transform: scale(1);
         filter: saturate(0) contrast(0.9);
-        animation: products-filter-out .5s ease-out;
+        animation: products-filter-out .3s ease-out;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -348,7 +348,7 @@
         /*animation: filter-in 5s ease-out;*/
         filter: saturate(1) contrast(1);
         transform: scale(1.5);
-        animation: products-filter-in .5s ease-out;
+        animation: products-filter-in .3s ease-out;
     }
 }
 

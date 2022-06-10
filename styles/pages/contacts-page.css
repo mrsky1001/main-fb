@@ -122,6 +122,7 @@
 
 .contacts-control__input {
     padding: .575rem 0.75rem;
+    /*padding: 1vw 3vw;*/
     font-size: 1rem;
     line-height: 1;
     color: #495057;
@@ -283,13 +284,16 @@
     }
 
     .contacts-select {
-        width: 116%;
+        width: 110%;
     }
 
     .contacts-control {
-        width: auto;
+        width: 90%;
     }
 
+    .contacts-control__input{
+
+    }
 
     .contacts-question__input {
         width: 270px;
@@ -297,6 +301,7 @@
 
     .contacts-main {
         height: 755px;
+        margin-top: 25px;
         justify-content: center;
     }
 
