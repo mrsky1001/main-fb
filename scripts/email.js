@@ -11,7 +11,7 @@ const resetInfoOpacity = () => setTimeout(() => {
 }, 3000)
 
 function captchaSubmit(token) {
-    const url = "https://foma-blog:8081/api/email"
+    const url = "https://foma-blog.ru:8081/api/email"
     const request = new XMLHttpRequest()
 
     request.open('POST', url, true)
