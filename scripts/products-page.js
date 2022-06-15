@@ -134,15 +134,15 @@ if (window.innerWidth > 800) {
     callbackLowerW800()
 }
 
-window.addEventListener('resize', (e) => {
-    if (window.innerWidth > 800 && lastWindowWidth < 801) {
-        callbackBiggerW800()
-        const productList = document.getElementsByClassName('products-page__list-container')[0]
-        productList.style.display = 'none'
-    } else if (window.innerWidth < 801 && lastWindowWidth > 800) {
-        callbackLowerW800()
-
-    }
-
-    lastWindowWidth = window.innerWidth
-}, true);
+// window.addEventListener('resize', (e) => {
+//     if (window.innerWidth > 800 && lastWindowWidth < 801) {
+//         callbackBiggerW800()
+//         const productList = document.getElementsByClassName('products-page__list-container')[0]
+//         productList.style.display = 'none'
+//     } else if (window.innerWidth < 801 && lastWindowWidth > 800) {
+//         callbackLowerW800()
+//
+//     }
+//
+//     lastWindowWidth = window.innerWidth
+// }, true);
