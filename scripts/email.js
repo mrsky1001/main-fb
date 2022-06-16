@@ -25,6 +25,7 @@ function captchaSubmit(token) {
         msgContainerEl.classList.add('info-msg-container__show')
 
         resetInfoOpacity()
+        document.getElementById('contactsForm').reset()
     }
 
     request.onerror = () => {
@@ -41,6 +42,7 @@ function captchaSubmit(token) {
     }
 
     request.send(JSON.stringify(obj)) // create FormData from form that triggered event
+
 }
 
 
