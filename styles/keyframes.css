@@ -133,7 +133,7 @@
 
 @keyframes bold-in {
     0% {
-        font-weight: 500;
+        font-weight: 600;
         font-size: unset;
     }
     100% {
@@ -148,17 +148,17 @@
         font-size: large;
     }
     100% {
-        font-weight: 500;
+        font-weight: 600;
         font-size: unset;
     }
 }
 
 @keyframes move-down {
     0% {
-        top: -520px;
+        top: -510px;
     }
     50% {
-        top: -520px;
+        top: -510px;
     }
     100% {
         top: -420px;
@@ -173,7 +173,7 @@
         top: -420px;
     }
     100% {
-        top: -520px;
+        top: -510px;
     }
 }
 

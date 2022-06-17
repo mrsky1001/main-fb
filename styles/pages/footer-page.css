@@ -44,6 +44,7 @@
     color: white;
     text-decoration: none;
     font-size: 1em;
+    font-weight: 600;
 }
 
 .footer__link:hover {
@@ -71,7 +72,7 @@
 }
 
 .footer__item {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .footer-fomka {
