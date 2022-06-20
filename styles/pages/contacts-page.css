@@ -166,9 +166,6 @@
     align-content: space-between;
 }
 
-.contacts-actions__save-btn {
-
-}
 
 .contacts-select {
     width: 110%;
@@ -203,6 +200,7 @@
 
 .contacts-actions__save-btn:hover {
     color: rgb(214 255 0);
+    filter: drop-shadow(3px 3px 4px black);
     /* filter: hue-rotate(120deg); */
 }
 
