@@ -29,6 +29,7 @@ const callbackBiggerW800 = () => {
 
         productName.classList.add('product-name__selected')
 
+        console.log(afterText)
         after.style.backgroundImage = "url('../products/" + afterText + ".png')"
     }
 

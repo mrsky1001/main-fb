@@ -60,6 +60,7 @@
 
 .product-names__text {
     position: absolute;
+white-space: nowrap;
 }
 
 .product-name__selected, .product-names__label:hover {

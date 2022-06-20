@@ -33,6 +33,25 @@ const products = [
         description:'calendar is cool!',
         rusDescription:'Деко',
         scale:1
+    }, {
+        name:'note',
+        rusName:'Блокнот',
+        description:'',
+        rusDescription:'Снежинка',
+        scale:1
+    },
+    {
+        name:'cup-ceramic',
+        rusName:'Керамическая кружка',
+        description:'',
+        rusDescription:'Клевер',
+        scale:1
+    }, {
+        name:'small-calendar',
+        rusName:'Карманный календарь',
+        description:'',
+        rusDescription:'Полюшко',
+        scale:1
     },
 ]
 
