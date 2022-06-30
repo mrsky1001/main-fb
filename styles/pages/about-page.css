@@ -72,6 +72,70 @@
 
 }
 
+.about-page__social-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-page__social {
+    margin-top: 150px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about-page__social a {
+    filter: invert(0.8);
+}
+
+.about-page__social a > * {
+    height: 50px;
+    width: 50px;
+}
+
+.about-page__social a:hover {
+    filter: invert(1);
+}
+
+.instagram-btn {
+    background-image: url("../../images/icons/instagram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.behance-btn {
+    background-image: url("../../images/icons/behance.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.telegram-btn {
+    width: 40px !important;
+    background-image: url("../../images/icons/telegram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vk-btn {
+    width: 40px !important;
+    background-image: url("../../images/icons/vk.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube-btn {
+    background-image: url("../../images/icons/youtube.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /*
 2. 1366px768, 3. 1536x864, 4.1440x900
@@ -123,11 +187,26 @@
         flex-wrap: wrap;
         font-size: small;
     }
+
+    .about-page__social {
+        width: 50%;
+    }
 }
 
-@media (min-width: 1001px)and (max-width: 1300px) {
+@media (max-width: 600px) {
+    .about-page__social {
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
     .about-bg {
         top: 525px;
+    }
+
+    .about-page__social {
+        width: 50%;
     }
 }
 
