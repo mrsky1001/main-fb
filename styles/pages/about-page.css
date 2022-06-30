@@ -89,6 +89,7 @@
 
 .about-page__social a {
     filter: invert(0.8);
+    animation: 0.5s scale-social-btn-down ease-in-out;
 }
 
 .about-page__social a > * {
@@ -98,7 +99,30 @@
 
 .about-page__social a:hover {
     filter: invert(1);
+    transform: scale(1.4);
+    animation: 0.5s scale-social-btn-up ease-in-out;
+
 }
+
+@keyframes scale-social-btn-up {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes scale-social-btn-down {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 .instagram-btn {
     background-image: url("../../images/icons/instagram.svg");
