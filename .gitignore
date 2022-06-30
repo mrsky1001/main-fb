@@ -1,2 +1,4 @@
-/dist/
-/.parcel-cache/
+dist/
+.parcel-cache/
+yarn.lock
+package.json
