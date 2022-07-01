@@ -187,7 +187,7 @@
 .section__count-pages {
     display: flex;
     /*margin-bottom: 15px;*/
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: baseline;
@@ -200,8 +200,8 @@
 
 .section__pages-icon {
     margin-right: 15px;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
+    height: 2em;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
