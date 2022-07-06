@@ -175,6 +175,8 @@
 /*
 2. 1366px768, 3. 1536x864, 4.1440x900
  */
+
+
 @media (min-width: 1281px) and (max-width: 1599px) {
     .about-page {
         height: 573px;

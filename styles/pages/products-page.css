@@ -250,14 +250,21 @@ white-space: nowrap;
     5. 360x640
  */
 
+
+:root {
+    --countProducts: 8;
+}
+
 @media (max-width: 800px) {
+
+
     .product-bg {
-        top: 2958px;
-        height: 2436px;
+        top: 2758px;
+        height: calc(var(--countProducts)* 480px);
     }
 
     .products-page {
-        height: 2015px;
+        height: calc(var(--countProducts)* 400px);
         display: block;
     }
 
