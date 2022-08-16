@@ -1,6 +1,26 @@
 /*
  * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  03.06.2022, 17:14
  */
+console.log(window.location.href)
+console.log(window.location.href.includes('post'))
+
+if (window.location.href.includes('post')) {
+    const listUrlParts = window.location.href.split('/')
+    const url = "http://localhost:8082/api/post-undefined/" + listUrlParts[listUrlParts.length - 1]
+
+    fetch(url, {
+        method: "GET"
+    }).then((res) => {
+        res.json().then((data)=>{
+            if(data && data.data && data.data.url) {
+                window.open(data.data.url)
+            }
+        })
+    }).catch((err) => {
+        console.log(err)
+    })
+}
+
 
 document.addEventListener('click', (e) => {
     sections.forEach((s) => {
