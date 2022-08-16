@@ -6,7 +6,7 @@ console.log(window.location.href.includes('post'))
 
 if (window.location.href.includes('post')) {
     const listUrlParts = window.location.href.split('/')
-    const url = "http://localhost:8082/api/post-undefined/" + listUrlParts[listUrlParts.length - 1]
+    const url = "https://foma-blog:8082/api/post-undefined/" + listUrlParts[listUrlParts.length - 1]
 
     fetch(url, {
         method: "GET"
