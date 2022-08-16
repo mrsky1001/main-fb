@@ -112,6 +112,9 @@
     .footer-rights {
         padding: 0 10vw 10vw 10vw;
     }
+    .fomka-img__bottom {
+        display: none;
+    }
 }
 
 @media (min-width: 2000px) {
