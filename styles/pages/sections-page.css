@@ -73,7 +73,7 @@
 .section-names__label:hover {
     cursor: pointer;
     font-weight: bolder;
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     color: rgb(214 255 0);
 }
 

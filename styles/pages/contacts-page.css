@@ -169,6 +169,7 @@
 
 .contacts-select {
     width: 110%;
+    font-weight: bold;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;

@@ -65,7 +65,7 @@ white-space: nowrap;
 
 .product-name__selected, .product-names__label:hover {
     color: rgb(214 255 0);
-    font-size: 20px;
+    /*font-size: 20px;*/
     cursor: pointer;
 
 }
@@ -163,6 +163,7 @@ white-space: nowrap;
     width: 100%;
     /* left: -25px; */
     font-style: italic;
+    font-weight: 600;
     /* margin: 0 auto; */
 }
 
