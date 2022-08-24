@@ -34,7 +34,7 @@ if (window.innerWidth < 801) {
 }
 
 
-const sections = ['store', 'dev', 'design', 'trip', 'home', 'photo']
+const sections = ['store', 'dev', 'design', 'travel', 'home', 'photo']
 
 sections.forEach(s => {
     const section = document.getElementsByClassName('section-list__img-' + s)[0]
