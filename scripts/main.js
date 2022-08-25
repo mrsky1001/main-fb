@@ -1,8 +1,6 @@
 /*
  * Copyright (c) Kolyada Nikita Vladimirovich <nikita.nk16@yandex.ru>  03.06.2022, 17:14
  */
-console.log(window.location.href)
-console.log(window.location.href.includes('post'))
 
 if (window.location.href.includes('post')) {
     const listUrlParts = window.location.href.split('/')
@@ -27,7 +25,7 @@ document.addEventListener('click', (e) => {
         const sectionBlock = document.getElementById(s + 'Section')
         const sectionsNames = document.getElementById('sectionsNames')
 
-        if (!sectionBlock.contains(e.target) && !sectionsNames.contains(e.target)) {
+        if (sectionBlock && !sectionBlock.contains(e.target) && !sectionsNames.contains(e.target)) {
             const section = document.getElementsByClassName('section-list__img-' + s)[0]
             const text = document.querySelector('.section-list__img-' + s + ' ~ .section__text-block-show')
 
