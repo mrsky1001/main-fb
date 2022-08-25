@@ -28,7 +28,7 @@ if (window.innerWidth < 801) {
     observerSections.observe(document.getElementById('storeSection'))
     observerSections.observe(document.getElementById('devSection'))
     observerSections.observe(document.getElementById('designSection'))
-    observerSections.observe(document.getElementById('tripSection'))
+    observerSections.observe(document.getElementById('travelSection'))
     observerSections.observe(document.getElementById('homeSection'))
     observerSections.observe(document.getElementById('photoSection'))
 }
