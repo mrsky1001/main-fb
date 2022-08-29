@@ -66,8 +66,8 @@
     margin: 0 0 30% 0;
     /*text-align: right;*/
     position: relative;
-    min-width: 100px;
-    min-height: 25px;
+    min-width: 174px;
+    min-height: 9px;
 }
 
 .section-names__label:hover {
