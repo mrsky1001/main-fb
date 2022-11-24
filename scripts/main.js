@@ -3,7 +3,9 @@
  */
 
 if (window.location.href.includes('post')) {
-    const listUrlParts = window.location.href.split('/')
+    const href = window.location.href.includes('#')?window.location.href.split('#')[0]:window.location.href
+
+    const listUrlParts = href.split('/')
     const url = "https://foma-blog.ru:8081/api/post-undefined/" + listUrlParts[listUrlParts.length - 1]
 
     fetch(url, {
